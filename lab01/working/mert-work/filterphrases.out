@@ -1,0 +1,2 @@
+To run the decoder, please call:
+  moses -f /users/case4/wallm22/smt-lab/working/mert-work/filtered/moses.ini -i /users/case4/wallm22/smt-lab/working/mert-work/filtered/input.30795

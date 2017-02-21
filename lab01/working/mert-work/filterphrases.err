@@ -1,0 +1,10 @@
+Executing: mkdir -p /users/case4/wallm22/smt-lab/working/mert-work/filtered
+Stripping XML: /usr/local/mosesdecoder/scripts/training/../generic/strip-xml.perl < /users/case4/wallm22/smt-lab/corpus/tune-data.fr > /users/case4/wallm22/smt-lab/working/mert-work/filtered/input.30795 
+pt:PhraseDictionaryMemory name=TranslationModel0 table-limit=20 num-features=4 path=/users/case4/wallm22/smt-lab/working/train/model/phrase-table.gz input-factor=0 output-factor=0
+Considering factor 0
+ro:LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/users/case4/wallm22/smt-lab/working/train/model/reordering-table.wbe-msd-bidirectional-fe.gz
+Considering factor 0
+filtering /users/case4/wallm22/smt-lab/working/train/model/phrase-table.gz -> /users/case4/wallm22/smt-lab/working/mert-work/filtered/phrase-table.0-0.1.1.gz...
+645 of 27595 phrases pairs used (2.34%) - note: max length 10
+filtering /users/case4/wallm22/smt-lab/working/train/model/reordering-table.wbe-msd-bidirectional-fe.gz -> /users/case4/wallm22/smt-lab/working/mert-work/filtered/reordering-table.wbe-msd-bidirectional-fe...
+645 of 27595 phrases pairs used (2.34%) - note: max length 10

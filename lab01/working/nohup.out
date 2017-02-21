@@ -1,0 +1,30 @@
+Option root-dir requires an argument
+Train Phrase Model
+
+Steps: (--first-step to --last-step)
+(1) prepare corpus
+(2) run GIZA
+(3) align words
+(4) learn lexical translation
+(5) extract phrases
+(6) score phrases
+(7) learn reordering model
+(8) learn generation model
+(9) create decoder config file
+
+For more, please check manual or contact koehn@inf.ed.ac.uk
+Option root-dir requires an argument
+Train Phrase Model
+
+Steps: (--first-step to --last-step)
+(1) prepare corpus
+(2) run GIZA
+(3) align words
+(4) learn lexical translation
+(5) extract phrases
+(6) score phrases
+(7) learn reordering model
+(8) learn generation model
+(9) create decoder config file
+
+For more, please check manual or contact koehn@inf.ed.ac.uk

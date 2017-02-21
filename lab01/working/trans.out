@@ -1,0 +1,1242 @@
+Defined parameters (per moses.ini or switch):
+	config: ./train/model/moses.ini 
+	distortion-limit: 6 
+	feature: UnknownWordPenalty WordPenalty PhrasePenalty PhraseDictionaryMemory name=TranslationModel0 table-limit=20 num-features=4 path=/users/case4/wallm22/smt-lab/working/train/model/phrase-table.gz input-factor=0 output-factor=0 LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/users/case4/wallm22/smt-lab/working/train/model/reordering-table.wbe-msd-bidirectional-fe.gz Distortion KENLM lazyken=0 name=LM0 factor=0 path=/users/case4/wallm22/smt-lab/lm/lm.arpa.en order=3 
+	input-factors: 0 
+	mapping: 0 T 0 
+	weight: UnknownWordPenalty0= 1 WordPenalty0= -1 PhrasePenalty0= 0.2 TranslationModel0= 0.2 0.2 0.2 0.2 LexicalReordering0= 0.3 0.3 0.3 0.3 0.3 0.3 Distortion0= 0.3 LM0= 0.5 
+/usr/local/mosesdecoder/bin
+line=UnknownWordPenalty
+FeatureFunction: UnknownWordPenalty0 start: 0 end: 0
+line=WordPenalty
+FeatureFunction: WordPenalty0 start: 1 end: 1
+line=PhrasePenalty
+FeatureFunction: PhrasePenalty0 start: 2 end: 2
+line=PhraseDictionaryMemory name=TranslationModel0 table-limit=20 num-features=4 path=/users/case4/wallm22/smt-lab/working/train/model/phrase-table.gz input-factor=0 output-factor=0
+FeatureFunction: TranslationModel0 start: 3 end: 6
+line=LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/users/case4/wallm22/smt-lab/working/train/model/reordering-table.wbe-msd-bidirectional-fe.gz
+FeatureFunction: LexicalReordering0 start: 7 end: 12
+Initializing LexicalReordering..
+line=Distortion
+FeatureFunction: Distortion0 start: 13 end: 13
+line=KENLM lazyken=0 name=LM0 factor=0 path=/users/case4/wallm22/smt-lab/lm/lm.arpa.en order=3
+FeatureFunction: LM0 start: 14 end: 14
+Loading the LM will be faster if you build a binary file.
+Reading /users/case4/wallm22/smt-lab/lm/lm.arpa.en
+----5---10---15---20---25---30---35---40---45---50---55---60---65---70---75---80---85---90---95--100
+****************************************************************************************************
+Loading UnknownWordPenalty0
+Loading WordPenalty0
+Loading PhrasePenalty0
+Loading LexicalReordering0
+Loading table into memory...done.
+Loading Distortion0
+Loading LM0
+Loading TranslationModel0
+Start loading text SCFG phrase table. Moses  format : [1.000] seconds
+Reading /users/case4/wallm22/smt-lab/working/train/model/phrase-table.gz
+----5---10---15---20---25---30---35---40---45---50---55---60---65---70---75---80---85---90---95--100
+****************************************************************************************************
+IO from STDOUT/STDIN
+Created input-output object : [1.000] seconds
+Translating line 0  in thread id 140176936716032
+Translating: Il vaut mieux hasarder de sauver un coupable que de condamner un innocent. 
+Line 0: Collecting options took 0.000 seconds
+Line 0: Search took 0.000 seconds
+BEST TRANSLATION: Better to hasarder|UNK|UNK|UNK of sauver|UNK|UNK|UNK a guilty that of condamner|UNK|UNK|UNK a innocent.|UNK|UNK|UNK [1111111111111]  [total=-418.109] core=(-400.000,-12.000,11.000,-2.537,-7.020,-3.797,-9.296,-1.541,0.000,0.000,-1.311,0.000,0.000,0.000,-53.846)  
+Line 0: Translation took 0.000 seconds total
+Translating line 1  in thread id 140176936716032
+Translating: Si Dieu n'existait pas, il faudrait l'inventer. 
+Line 1: Collecting options took 0.000 seconds
+Line 1: Search took 0.000 seconds
+BEST TRANSLATION: If God n'existait|UNK|UNK|UNK pas,|UNK|UNK|UNK he should be l'inventer.|UNK|UNK|UNK [1111111]  [total=-310.138] core=(-300.000,-8.000,7.000,-1.343,-3.512,-0.973,-2.384,-0.942,0.000,0.000,-1.024,0.000,0.000,0.000,-34.611)  
+Line 1: Translation took 0.000 seconds total
+Translating line 2  in thread id 140176936716032
+Translating: La foi consiste à croire ce que la raison ne croit pas. 
+Line 2: Collecting options took 0.000 seconds
+Line 2: Search took 0.000 seconds
+BEST TRANSLATION: The foi|UNK|UNK|UNK consiste|UNK|UNK|UNK to believe what the reason don pas.|UNK|UNK|UNK croit|UNK|UNK|UNK [111111111111]  [total=-419.092] core=(-400.000,-11.000,11.000,-6.240,-7.783,-1.341,-5.106,-1.706,0.000,0.000,-1.305,0.000,-0.048,-3.000,-52.759)  
+Line 2: Translation took 0.000 seconds total
+Translating line 3  in thread id 140176936716032
+Translating: Ajoutez votre réponse dans le champ bleu ci-dessous. 
+Line 3: Collecting options took 0.000 seconds
+Line 3: Search took 0.000 seconds
+BEST TRANSLATION: Ajoutez|UNK|UNK|UNK your answer in the champ|UNK|UNK|UNK bleu|UNK|UNK|UNK ci-dessous.|UNK|UNK|UNK [11111111]  [total=-410.494] core=(-400.000,-8.000,8.000,-4.329,-5.139,-0.235,-1.601,-0.564,0.000,0.000,-1.060,0.000,0.000,0.000,-34.693)  
+Line 3: Translation took 0.000 seconds total
+Translating line 4  in thread id 140176936716032
+Translating: Je ne paye pas ! Je suis mousquetaire. 
+Line 4: Collecting options took 0.000 seconds
+Line 4: Search took 0.000 seconds
+BEST TRANSLATION: I don &apos;t paye|UNK|UNK|UNK ! I &apos;m mousquetaire.|UNK|UNK|UNK [11111111]  [total=-206.776] core=(-200.000,-8.000,7.000,-1.822,-3.136,-1.262,-2.336,-0.280,0.000,-2.066,-0.748,-0.525,-0.048,-4.000,-24.327)  
+Line 4: Translation took 0.000 seconds total
+Translating line 5  in thread id 140176936716032
+Translating: Exerçons-nous au fleuret. 
+Line 5: Collecting options took 0.000 seconds
+Line 5: Search took 0.000 seconds
+BEST TRANSLATION: Exerçons-nous|UNK|UNK|UNK in fleuret.|UNK|UNK|UNK [111]  [total=-205.513] core=(-200.000,-3.000,3.000,-2.944,-2.856,-0.981,-2.054,-0.251,0.000,0.000,-0.251,0.000,0.000,0.000,-14.389)  
+Line 5: Translation took 0.000 seconds total
+Translating line 6  in thread id 140176936716032
+Translating: Exerçons-nous au fleuret. 
+Line 6: Collecting options took 0.000 seconds
+Line 6: Search took 0.000 seconds
+BEST TRANSLATION: Exerçons-nous|UNK|UNK|UNK in fleuret.|UNK|UNK|UNK [111]  [total=-205.513] core=(-200.000,-3.000,3.000,-2.944,-2.856,-0.981,-2.054,-0.251,0.000,0.000,-0.251,0.000,0.000,0.000,-14.389)  
+Line 6: Translation took 0.000 seconds total
+Translating line 7  in thread id 140176936716032
+Translating: Monsieur, avez-vous vu monsieur de Cyrano ? 
+Line 7: Collecting options took 0.000 seconds
+Line 7: Search took 0.000 seconds
+BEST TRANSLATION: Monsieur,|UNK|UNK|UNK did you vu|UNK|UNK|UNK monsieur|UNK|UNK|UNK of Cyrano|UNK|UNK|UNK ? [1111111]  [total=-406.990] core=(-400.000,-8.000,7.000,-1.872,-3.331,-0.739,-3.516,-0.380,0.000,0.000,-0.284,0.000,0.000,0.000,-28.599)  
+Line 7: Translation took 0.000 seconds total
+Translating line 8  in thread id 140176936716032
+Translating: Monsieur, avez-vous vu monsieur de Cyrano ? 
+Line 8: Collecting options took 0.000 seconds
+Line 8: Search took 0.000 seconds
+BEST TRANSLATION: Monsieur,|UNK|UNK|UNK did you vu|UNK|UNK|UNK monsieur|UNK|UNK|UNK of Cyrano|UNK|UNK|UNK ? [1111111]  [total=-406.990] core=(-400.000,-8.000,7.000,-1.872,-3.331,-0.739,-3.516,-0.380,0.000,0.000,-0.284,0.000,0.000,0.000,-28.599)  
+Line 8: Translation took 0.000 seconds total
+Translating line 9  in thread id 140176936716032
+Translating: C’est un garçon versé dans les colichemardes. 
+Line 9: Collecting options took 0.000 seconds
+Line 9: Search took 0.000 seconds
+BEST TRANSLATION: C’est|UNK|UNK|UNK a garçon|UNK|UNK|UNK versé|UNK|UNK|UNK in the colichemardes.|UNK|UNK|UNK [1111111]  [total=-405.682] core=(-400.000,-7.000,7.000,-3.059,-3.821,-0.633,-1.787,-0.347,0.000,0.000,-0.144,0.000,0.000,0.000,-24.149)  
+Line 9: Translation took 0.000 seconds total
+Translating line 10  in thread id 140176936716032
+Translating: "N’est-ce pas que cet homme est des moins ordinaires ?" "Ah ! c’est le plus exquis des êtres sublunaires !" 
+Line 10: Collecting options took 0.000 seconds
+Line 10: Search took 1.000 seconds
+BEST TRANSLATION: "N’est-ce|UNK|UNK|UNK &apos;t that cet|UNK|UNK|UNK man is of least ordinaires|UNK|UNK|UNK ?"|UNK|UNK|UNK "Ah|UNK|UNK|UNK ! c’est|UNK|UNK|UNK the most exquis|UNK|UNK|UNK of êtres|UNK|UNK|UNK sublunaires|UNK|UNK|UNK !"|UNK|UNK|UNK [11111111111111111111]  [total=-1026.879] core=(-1000.000,-20.000,20.000,-8.991,-8.429,-4.540,-10.472,-2.772,0.000,0.000,-3.027,0.000,0.000,0.000,-85.306)  
+Line 10: Translation took 1.000 seconds total
+Translating line 11  in thread id 140176936716032
+Translating: "N’est-ce pas que cet homme est des moins ordinaires ?" "Ah ! c’est le plus exquis des êtres sublunaires !" 
+Line 11: Collecting options took 0.000 seconds
+Line 11: Search took 0.000 seconds
+BEST TRANSLATION: "N’est-ce|UNK|UNK|UNK &apos;t that cet|UNK|UNK|UNK man is of least ordinaires|UNK|UNK|UNK ?"|UNK|UNK|UNK "Ah|UNK|UNK|UNK ! c’est|UNK|UNK|UNK the most exquis|UNK|UNK|UNK of êtres|UNK|UNK|UNK sublunaires|UNK|UNK|UNK !"|UNK|UNK|UNK [11111111111111111111]  [total=-1026.879] core=(-1000.000,-20.000,20.000,-8.991,-8.429,-4.540,-10.472,-2.772,0.000,0.000,-3.027,0.000,0.000,0.000,-85.306)  
+Line 11: Translation took 0.000 seconds total
+Translating line 12  in thread id 140176936716032
+Translating: Ah ! je vais me fâcher ! 
+Line 12: Collecting options took 0.000 seconds
+Line 12: Search took 0.000 seconds
+BEST TRANSLATION: Ah ! I &apos;m going to me fâcher|UNK|UNK|UNK ! [1111111]  [total=-111.393] core=(-100.000,-9.000,6.000,-1.300,-4.874,-1.955,-5.392,-3.108,0.000,0.000,-2.812,0.000,0.000,0.000,-34.225)  
+Line 12: Translation took 0.000 seconds total
+Translating line 13  in thread id 140176936716032
+Translating: Si j’entends une fois encor cette chanson, je vous assomme tous. 
+Line 13: Collecting options took 0.000 seconds
+Line 13: Search took 0.000 seconds
+BEST TRANSLATION: If j’entends|UNK|UNK|UNK a once encor|UNK|UNK|UNK crazy chanson,|UNK|UNK|UNK I you assomme|UNK|UNK|UNK tous.|UNK|UNK|UNK [11111111111]  [total=-517.649] core=(-500.000,-11.000,11.000,-8.608,-7.940,-2.342,-3.024,-2.593,0.000,0.000,-1.536,0.000,0.000,0.000,-50.456)  
+Line 13: Translation took 0.000 seconds total
+Translating line 14  in thread id 140176936716032
+Translating: Je vous ordonne de vous taire ! 
+Line 14: Collecting options took 0.000 seconds
+Line 14: Search took 0.000 seconds
+BEST TRANSLATION: I you ordonne|UNK|UNK|UNK to you taire|UNK|UNK|UNK ! [1111111]  [total=-209.017] core=(-200.000,-7.000,7.000,-6.848,-7.860,-1.869,-2.890,-0.697,0.000,0.000,-0.879,0.000,0.000,0.000,-26.100)  
+Line 14: Translation took 0.000 seconds total
+Translating line 15  in thread id 140176936716032
+Translating: Approchez-vous, jeunes héros ! 
+Line 15: Collecting options took 0.000 seconds
+Line 15: Search took 0.000 seconds
+BEST TRANSLATION: Approchez-vous,|UNK|UNK|UNK bride héros|UNK|UNK|UNK ! [1111]  [total=-206.084] core=(-200.000,-4.000,4.000,-0.064,-0.064,-0.874,-1.242,-0.675,0.000,0.000,-0.511,0.000,0.000,0.000,-20.160)  
+Line 15: Translation took 0.000 seconds total
+Translating line 16  in thread id 140176936716032
+Translating: La pudeur vous défend de voir ma lame nue ? 
+Line 16: Collecting options took 0.000 seconds
+Line 16: Search took 0.000 seconds
+BEST TRANSLATION: The pudeur|UNK|UNK|UNK you défend|UNK|UNK|UNK to see my lame|UNK|UNK|UNK nue|UNK|UNK|UNK ? [1111111111]  [total=-414.105] core=(-400.000,-10.000,9.000,-4.926,-8.201,-0.624,-4.136,-0.800,0.000,0.000,-0.656,0.000,0.000,0.000,-43.782)  
+Line 16: Translation took 0.000 seconds total
+Translating line 17  in thread id 140176936716032
+Translating: Vous.... vous avez un nez... heu... un nez... très grand. 
+Line 17: Collecting options took 0.000 seconds
+Line 17: Search took 0.000 seconds
+BEST TRANSLATION: Vous....|UNK|UNK|UNK you do have a nez...|UNK|UNK|UNK heu...|UNK|UNK|UNK a nez...|UNK|UNK|UNK very grand.|UNK|UNK|UNK [1111111111]  [total=-511.164] core=(-500.000,-11.000,9.000,-1.851,-8.412,-0.870,-4.715,-1.188,0.000,0.000,-0.837,0.000,0.000,0.000,-40.375)  
+Line 17: Translation took 0.000 seconds total
+Translating line 18  in thread id 140176936716032
+Translating: C’est la Mer Rouge quand il saigne ! 
+Line 18: Collecting options took 0.000 seconds
+Line 18: Search took 0.000 seconds
+BEST TRANSLATION: C’est|UNK|UNK|UNK the Mer|UNK|UNK|UNK Rouge|UNK|UNK|UNK when he saigne|UNK|UNK|UNK ! [11111111]  [total=-406.692] core=(-400.000,-8.000,8.000,-1.926,-1.920,-0.750,-1.867,-0.734,0.000,0.000,-0.324,0.000,0.000,0.000,-29.364)  
+Line 18: Translation took 0.000 seconds total
+Translating line 19  in thread id 140176936716032
+Translating: C’est la Mer Rouge quand il saigne ! 
+Line 19: Collecting options took 0.000 seconds
+Line 19: Search took 0.000 seconds
+BEST TRANSLATION: C’est|UNK|UNK|UNK the Mer|UNK|UNK|UNK Rouge|UNK|UNK|UNK when he saigne|UNK|UNK|UNK ! [11111111]  [total=-406.692] core=(-400.000,-8.000,8.000,-1.926,-1.920,-0.750,-1.867,-0.734,0.000,0.000,-0.324,0.000,0.000,0.000,-29.364)  
+Line 19: Translation took 0.000 seconds total
+Translating line 20  in thread id 140176936716032
+Translating: Oh ! je ne me fais pas d’illusion ! 
+Line 20: Collecting options took 0.000 seconds
+Line 20: Search took 0.000 seconds
+BEST TRANSLATION: Oh ! I don &apos;t me &apos;m d’illusion|UNK|UNK|UNK ! [111111111]  [total=-117.341] core=(-100.000,-9.000,9.000,-6.482,-6.124,-1.993,-3.924,-1.382,0.000,-1.426,-2.206,0.000,-3.392,-6.000,-40.228)  
+Line 20: Translation took 0.000 seconds total
+Translating line 21  in thread id 140176936716032
+Translating: Oh ! je ne me fais pas d’illusion ! 
+Line 21: Collecting options took 0.000 seconds
+Line 21: Search took 0.000 seconds
+BEST TRANSLATION: Oh ! I don &apos;t me &apos;m d’illusion|UNK|UNK|UNK ! [111111111]  [total=-117.341] core=(-100.000,-9.000,9.000,-6.482,-6.124,-1.993,-3.924,-1.382,0.000,-1.426,-2.206,0.000,-3.392,-6.000,-40.228)  
+Line 21: Translation took 0.000 seconds total
+Translating line 22  in thread id 140176936716032
+Translating: J’aime Cléopâtre : ai-je l’air d’un César ? 
+Line 22: Collecting options took 0.000 seconds
+Line 22: Search took 0.000 seconds
+BEST TRANSLATION: J’aime|UNK|UNK|UNK Cléopâtre|UNK|UNK|UNK : you l’air|UNK|UNK|UNK d’un|UNK|UNK|UNK César|UNK|UNK|UNK ? [11111111]  [total=-507.487] core=(-500.000,-8.000,8.000,-3.870,-4.608,-0.229,-0.916,-0.531,0.000,0.000,-0.452,0.000,0.000,0.000,-29.736)  
+Line 22: Translation took 0.000 seconds total
+Translating line 23  in thread id 140176936716032
+Translating: Est-ce que ça te plaît de vivre ainsi ? 
+Line 23: Collecting options took 0.000 seconds
+Line 23: Search took 0.000 seconds
+BEST TRANSLATION: Is it you plaît|UNK|UNK|UNK to live way it has been ? [111111111]  [total=-116.802] core=(-100.000,-11.000,8.000,-9.143,-12.524,-2.483,-10.629,-3.859,0.000,0.000,-3.358,0.000,0.000,0.000,-40.563)  
+Line 23: Translation took 0.000 seconds total
+Translating line 24  in thread id 140176936716032
+Translating: Au lieu de trois pâtés, je vous en donne six. 
+Line 24: Collecting options took 0.000 seconds
+Line 24: Search took 0.000 seconds
+BEST TRANSLATION: On lieu|UNK|UNK|UNK of three pâtés,|UNK|UNK|UNK I you in donne|UNK|UNK|UNK six.|UNK|UNK|UNK [1111111111]  [total=-418.236] core=(-400.000,-10.000,10.000,-5.310,-6.819,-1.632,-4.328,-1.342,0.000,0.000,-1.300,0.000,0.000,0.000,-51.652)  
+Line 24: Translation took 0.000 seconds total
+Translating line 25  in thread id 140176936716032
+Translating: Ensemble, nous pouvons y arriver ! 
+Line 25: Collecting options took 0.000 seconds
+Line 25: Search took 0.000 seconds
+BEST TRANSLATION: Ensemble,|UNK|UNK|UNK we pouvons|UNK|UNK|UNK do it . [111111]  [total=-209.667] core=(-200.000,-6.000,5.000,-5.620,-11.774,-2.937,-6.974,-1.260,0.000,0.000,-0.635,0.000,0.000,0.000,-21.274)  
+Line 25: Translation took 0.000 seconds total
+Translating line 26  in thread id 140176936716032
+Translating: Vous veniez tous les étés à Bergerac ! 
+Line 26: Collecting options took 0.000 seconds
+Line 26: Search took 0.000 seconds
+BEST TRANSLATION: You veniez|UNK|UNK|UNK all the étés|UNK|UNK|UNK to Bergerac|UNK|UNK|UNK ! [11111111]  [total=-308.430] core=(-300.000,-8.000,7.000,-3.589,-7.140,-1.263,-3.495,-0.629,0.000,0.000,-0.483,0.000,0.000,0.000,-28.797)  
+Line 26: Translation took 0.000 seconds total
+Translating line 27  in thread id 140176936716032
+Translating: Qu’est-ce que c’est encor que cette égratignure ? 
+Line 27: Collecting options took 0.000 seconds
+Line 27: Search took 0.000 seconds
+BEST TRANSLATION: Qu’est-ce|UNK|UNK|UNK that c’est|UNK|UNK|UNK encor|UNK|UNK|UNK that crazy égratignure|UNK|UNK|UNK ? [11111111]  [total=-410.710] core=(-400.000,-8.000,8.000,-2.550,-3.255,-2.137,-3.472,-1.851,0.000,0.000,-0.730,0.000,0.000,0.000,-34.506)  
+Line 27: Translation took 0.000 seconds total
+Translating line 28  in thread id 140176936716032
+Translating: Qu’est-ce que c’est encor que cette égratignure ? 
+Line 28: Collecting options took 0.000 seconds
+Line 28: Search took 0.000 seconds
+BEST TRANSLATION: Qu’est-ce|UNK|UNK|UNK that c’est|UNK|UNK|UNK encor|UNK|UNK|UNK that crazy égratignure|UNK|UNK|UNK ? [11111111]  [total=-410.710] core=(-400.000,-8.000,8.000,-2.550,-3.255,-2.137,-3.472,-1.851,0.000,0.000,-0.730,0.000,0.000,0.000,-34.506)  
+Line 28: Translation took 0.000 seconds total
+Translating line 29  in thread id 140176936716032
+Translating: J’aime quelqu’un. 
+Line 29: Collecting options took 0.000 seconds
+Line 29: Search took 0.000 seconds
+BEST TRANSLATION: J’aime|UNK|UNK|UNK quelqu’un.|UNK|UNK|UNK [11]  [total=-201.782] core=(-200.000,-2.000,2.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,-8.365)  
+Line 29: Translation took 0.000 seconds total
+Translating line 30  in thread id 140176936716032
+Translating: "Vous savez donc ses lettres par cœur ?" "Toutes !" 
+Line 30: Collecting options took 0.000 seconds
+Line 30: Search took 0.000 seconds
+BEST TRANSLATION: "Vous|UNK|UNK|UNK know what his lettres|UNK|UNK|UNK by heart ?"|UNK|UNK|UNK "Toutes|UNK|UNK|UNK !"|UNK|UNK|UNK [1111111111]  [total=-517.892] core=(-500.000,-10.000,10.000,-8.083,-8.945,-1.856,-3.281,-3.117,0.000,0.000,-2.819,0.000,0.000,0.000,-47.356)  
+Line 30: Translation took 0.000 seconds total
+Translating line 31  in thread id 140176936716032
+Translating: Je ne suis pas si bête à la fin ! 
+Line 31: Collecting options took 0.000 seconds
+Line 31: Search took 0.000 seconds
+BEST TRANSLATION: I am not so dumb to the end ! [1111111111]  [total=-13.166] core=(0.000,-9.000,7.000,-3.656,-8.403,-1.922,-7.772,-2.082,0.000,0.000,-2.046,0.000,0.000,0.000,-35.955)  
+Line 31: Translation took 0.000 seconds total
+Translating line 32  in thread id 140176936716032
+Translating: Vous ne m’aviez jamais parlé comme cela ! 
+Line 32: Collecting options took 0.000 seconds
+Line 32: Search took 0.000 seconds
+BEST TRANSLATION: You don m’aviez|UNK|UNK|UNK never spoken like it ! [11111111]  [total=-118.380] core=(-100.000,-8.000,7.000,-6.332,-9.134,-2.026,-3.503,-4.852,0.000,0.000,-3.966,0.000,0.000,0.000,-41.870)  
+Line 32: Translation took 0.000 seconds total
+Translating line 33  in thread id 140176936716032
+Translating: Une dame m’attend ! 
+Line 33: Collecting options took 0.000 seconds
+Line 33: Search took 0.000 seconds
+BEST TRANSLATION: An dame|UNK|UNK|UNK m’attend|UNK|UNK|UNK ! [1111]  [total=-204.765] core=(-200.000,-4.000,4.000,-1.162,-1.162,-0.874,-1.935,-0.675,0.000,0.000,-0.511,0.000,0.000,0.000,-16.365)  
+Line 33: Translation took 0.000 seconds total
+Translating line 34  in thread id 140176936716032
+Translating: Veuillez dire adieu, Madame, à votre époux. 
+Line 34: Collecting options took 0.000 seconds
+Line 34: Search took 0.000 seconds
+BEST TRANSLATION: Veuillez|UNK|UNK|UNK say adieu,|UNK|UNK|UNK Madame,|UNK|UNK|UNK to your époux.|UNK|UNK|UNK [1111111]  [total=-410.822] core=(-400.000,-7.000,7.000,-3.910,-5.245,-1.735,-3.036,-1.169,0.000,0.000,-1.264,0.000,0.000,0.000,-31.413)  
+Line 34: Translation took 0.000 seconds total
+Translating line 35  in thread id 140176936716032
+Translating: Mourir n’est pas terrible. Mais… ne plus la revoir jamais… Voilà l’horrible ! 
+Line 35: Collecting options took 0.000 seconds
+Line 35: Search took 0.000 seconds
+BEST TRANSLATION: Mourir|UNK|UNK|UNK n’est|UNK|UNK|UNK Mais…|UNK|UNK|UNK don &apos;t terrible.|UNK|UNK|UNK more the revoir|UNK|UNK|UNK jamais…|UNK|UNK|UNK Voilà|UNK|UNK|UNK l’horrible|UNK|UNK|UNK ! [1111111111111]  [total=-810.789] core=(-800.000,-13.000,13.000,-1.487,-1.991,-1.693,-3.638,-0.458,0.000,-2.066,-1.896,0.000,-0.048,-8.000,-41.773)  
+Line 35: Translation took 0.000 seconds total
+Translating line 36  in thread id 140176936716032
+Translating: Monsieur de Bergerac, je suis votre cousine. 
+Line 36: Collecting options took 0.000 seconds
+Line 36: Search took 0.000 seconds
+BEST TRANSLATION: Sir of Bergerac,|UNK|UNK|UNK I &apos;m your cousine.|UNK|UNK|UNK [1111111]  [total=-212.045] core=(-200.000,-7.000,6.000,-3.346,-4.947,-1.362,-2.758,-0.872,0.000,0.000,-1.443,0.000,0.000,0.000,-34.135)  
+Line 36: Translation took 0.000 seconds total
+Translating line 37  in thread id 140176936716032
+Translating: Tais-toi ! Pas devant elle ! 
+Line 37: Collecting options took 0.000 seconds
+Line 37: Search took 0.000 seconds
+BEST TRANSLATION: Tais-toi|UNK|UNK|UNK ! Pas|UNK|UNK|UNK before she ! [111111]  [total=-211.663] core=(-200.000,-6.000,6.000,-2.767,-2.682,-1.054,-0.905,-1.090,0.000,0.000,-0.795,0.000,0.000,0.000,-33.632)  
+Line 37: Translation took 0.000 seconds total
+Translating line 38  in thread id 140176936716032
+Translating: "Elle ne m'aime plus !" "Comment ?" "C’est toi qu'elle aime !" 
+Line 38: Collecting options took 0.000 seconds
+Line 38: Search took 0.000 seconds
+BEST TRANSLATION: "Elle|UNK|UNK|UNK don m'aime|UNK|UNK|UNK more !"|UNK|UNK|UNK "Comment|UNK|UNK|UNK ?"|UNK|UNK|UNK "C’est|UNK|UNK|UNK you qu'elle|UNK|UNK|UNK like !"|UNK|UNK|UNK [111111111111]  [total=-814.102] core=(-800.000,-12.000,12.000,-3.967,-5.351,-1.520,-2.854,-1.165,0.000,0.000,-4.810,0.000,0.000,0.000,-47.943)  
+Line 38: Translation took 0.000 seconds total
+Translating line 39  in thread id 140176936716032
+Translating: Elle m'a présenté sa sœur. 
+Line 39: Collecting options took 0.000 seconds
+Line 39: Search took 0.000 seconds
+BEST TRANSLATION: She m'a|UNK|UNK|UNK présenté|UNK|UNK|UNK his sœur.|UNK|UNK|UNK [11111]  [total=-305.751] core=(-300.000,-5.000,5.000,-1.658,-1.355,-0.118,-0.405,-0.491,0.000,0.000,-0.491,0.000,0.000,0.000,-21.499)  
+Line 39: Translation took 0.000 seconds total
+Translating line 40  in thread id 140176936716032
+Translating: Elle m'a présenté sa sœur. 
+Line 40: Collecting options took 0.000 seconds
+Line 40: Search took 0.000 seconds
+BEST TRANSLATION: She m'a|UNK|UNK|UNK présenté|UNK|UNK|UNK his sœur.|UNK|UNK|UNK [11111]  [total=-305.751] core=(-300.000,-5.000,5.000,-1.658,-1.355,-0.118,-0.405,-0.491,0.000,0.000,-0.491,0.000,0.000,0.000,-21.499)  
+Line 40: Translation took 0.000 seconds total
+Translating line 41  in thread id 140176936716032
+Translating: Cherchez plus dur sur Google ! 
+Line 41: Collecting options took 0.000 seconds
+Line 41: Search took 0.000 seconds
+BEST TRANSLATION: Cherchez|UNK|UNK|UNK harder on Google|UNK|UNK|UNK ! [111111]  [total=-209.776] core=(-200.000,-5.000,5.000,-1.961,-3.947,-1.384,-1.706,-0.775,0.000,0.000,-1.821,0.000,0.000,0.000,-26.395)  
+Line 41: Translation took 0.000 seconds total
+Translating line 42  in thread id 140176936716032
+Translating: Ils ont déjà visité les États-Unis. 
+Line 42: Collecting options took 0.000 seconds
+Line 42: Search took 0.000 seconds
+BEST TRANSLATION: They were already visité|UNK|UNK|UNK the États-Unis.|UNK|UNK|UNK [111111]  [total=-210.938] core=(-200.000,-6.000,6.000,-3.533,-4.391,-2.151,-4.104,-1.031,0.000,0.000,-0.976,0.000,0.000,0.000,-29.399)  
+Line 42: Translation took 0.000 seconds total
+Translating line 43  in thread id 140176936716032
+Translating: Je suis encore sous le choc. 
+Line 43: Collecting options took 0.000 seconds
+Line 43: Search took 0.000 seconds
+BEST TRANSLATION: I &apos;m still in the the choc.|UNK|UNK|UNK [111111]  [total=-108.905] core=(-100.000,-7.000,6.000,-6.239,-8.855,-0.896,-3.647,-0.856,0.000,0.000,-0.909,0.000,0.000,0.000,-25.296)  
+Line 43: Translation took 0.000 seconds total
+Translating line 44  in thread id 140176936716032
+Translating: Elle sait jouer de la guitare. 
+Line 44: Collecting options took 0.000 seconds
+Line 44: Search took 0.000 seconds
+BEST TRANSLATION: She sait|UNK|UNK|UNK will of the guitare.|UNK|UNK|UNK [111111]  [total=-209.650] core=(-200.000,-6.000,6.000,-4.396,-5.699,-0.912,-3.674,-1.911,0.000,0.000,-1.802,0.000,0.000,0.000,-25.599)  
+Line 44: Translation took 0.000 seconds total
+Translating line 45  in thread id 140176936716032
+Translating: Des millions de gens du monde entier pleurent la disparition de Nelson Mandela. 
+Line 45: Collecting options took 0.000 seconds
+Line 45: Search took 1.000 seconds
+BEST TRANSLATION: Des|UNK|UNK|UNK millions|UNK|UNK|UNK of people the world worldwide pleurent|UNK|UNK|UNK the disparition|UNK|UNK|UNK of Nelson|UNK|UNK|UNK Mandela.|UNK|UNK|UNK [1111111111111]  [total=-617.693] core=(-600.000,-13.000,13.000,-9.284,-5.887,-2.395,-5.378,-3.628,0.000,0.000,-2.592,0.000,0.000,0.000,-53.675)  
+Line 45: Translation took 1.000 seconds total
+Translating line 46  in thread id 140176936716032
+Translating: Quelle est la différence entre un canard? 
+Line 46: Collecting options took 0.000 seconds
+Line 46: Search took 0.000 seconds
+BEST TRANSLATION: What is the différence|UNK|UNK|UNK between a canard?|UNK|UNK|UNK [1111111]  [total=-209.397] core=(-200.000,-7.000,6.000,-1.579,-5.186,-0.575,-1.923,-0.815,0.000,0.000,-0.610,0.000,0.000,0.000,-30.634)  
+Line 46: Translation took 0.000 seconds total
+Translating line 47  in thread id 140176936716032
+Translating: Je suis désolée, mais la réponse est "Non". 
+Line 47: Collecting options took 0.000 seconds
+Line 47: Search took 0.000 seconds
+BEST TRANSLATION: I &apos;m désolée,|UNK|UNK|UNK but the answer is "Non".|UNK|UNK|UNK [11111111]  [total=-208.916] core=(-200.000,-8.000,7.000,-1.741,-4.074,-1.044,-1.939,-0.654,0.000,0.000,-0.769,0.000,0.000,0.000,-32.259)  
+Line 47: Translation took 0.000 seconds total
+Translating line 48  in thread id 140176936716032
+Translating: Paris ne s'est pas fait en un jour. 
+Line 48: Collecting options took 0.000 seconds
+Line 48: Search took 0.000 seconds
+BEST TRANSLATION: Paris don &apos;t s'est|UNK|UNK|UNK &apos;s in a jour.|UNK|UNK|UNK [11111111]  [total=-215.146] core=(-200.000,-8.000,8.000,-5.192,-6.108,-2.163,-5.781,-0.836,0.000,-2.855,-0.650,-0.525,-0.048,-4.000,-36.445)  
+Line 48: Translation took 0.000 seconds total
+Translating line 49  in thread id 140176936716032
+Translating: Ils accomplissaient leurs objectifs. 
+Line 49: Collecting options took 0.000 seconds
+Line 49: Search took 0.000 seconds
+BEST TRANSLATION: They accomplissaient|UNK|UNK|UNK their objectifs.|UNK|UNK|UNK [1111]  [total=-206.484] core=(-200.000,-4.000,4.000,-1.609,-1.946,-0.442,-0.693,-0.762,0.000,0.000,-0.394,0.000,0.000,0.000,-19.997)  
+Line 49: Translation took 0.000 seconds total
+Translating line 50  in thread id 140176936716032
+Translating: Combien de temps as-tu dormi la nuit dernière? 
+Line 50: Collecting options took 0.000 seconds
+Line 50: Search took 0.000 seconds
+BEST TRANSLATION: How long did you dormi|UNK|UNK|UNK the night dernière?|UNK|UNK|UNK [11111111]  [total=-206.809] core=(-200.000,-8.000,6.000,-3.411,-7.675,-0.584,-4.204,-0.854,0.000,0.000,-0.762,0.000,0.000,0.000,-24.699)  
+Line 50: Translation took 0.000 seconds total
+Translating line 51  in thread id 140176936716032
+Translating: Tu as appelé ton fils "Tom". 
+Line 51: Collecting options took 0.000 seconds
+Line 51: Search took 0.000 seconds
+BEST TRANSLATION: You have called your fils|UNK|UNK|UNK "Tom".|UNK|UNK|UNK [111111]  [total=-212.391] core=(-200.000,-6.000,6.000,-4.928,-5.334,-0.974,-1.525,-1.721,0.000,0.000,-1.437,0.000,0.000,0.000,-32.183)  
+Line 51: Translation took 0.000 seconds total
+Translating line 52  in thread id 140176936716032
+Translating: Tu es arrivé à temps. 
+Line 52: Collecting options took 0.000 seconds
+Line 52: Search took 0.000 seconds
+BEST TRANSLATION: You &apos;re arrivé|UNK|UNK|UNK to temps.|UNK|UNK|UNK [11111]  [total=-203.639] core=(-200.000,-5.000,5.000,-2.142,-2.792,-0.763,-1.429,-0.276,0.000,0.000,-0.312,0.000,0.000,0.000,-16.076)  
+Line 52: Translation took 0.000 seconds total
+Translating line 53  in thread id 140176936716032
+Translating: Je veux écrire un livre. 
+Line 53: Collecting options took 0.000 seconds
+Line 53: Search took 0.000 seconds
+BEST TRANSLATION: I want a livre.|UNK|UNK|UNK écrire|UNK|UNK|UNK [11111]  [total=-204.459] core=(-200.000,-5.000,5.000,-2.120,-2.326,-0.685,-0.531,-1.030,0.000,-1.969,-0.181,0.000,-0.239,-4.000,-14.203)  
+Line 53: Translation took 0.000 seconds total
+Translating line 54  in thread id 140176936716032
+Translating: C'est une histoire très divertissante. 
+Line 54: Collecting options took 0.000 seconds
+Line 54: Search took 0.000 seconds
+BEST TRANSLATION: C'est|UNK|UNK|UNK a story very divertissante.|UNK|UNK|UNK [11111]  [total=-209.821] core=(-200.000,-5.000,5.000,-1.086,-1.987,-0.661,-1.083,-0.747,0.000,0.000,-0.856,0.000,0.000,0.000,-28.754)  
+Line 54: Translation took 0.000 seconds total
+Translating line 55  in thread id 140176936716032
+Translating: La France a un taux de natalité plus élevé que la plupart des autres pays européens. 
+Line 55: Collecting options took 0.000 seconds
+Line 55: Search took 0.000 seconds
+BEST TRANSLATION: The France is a taux|UNK|UNK|UNK of natalité|UNK|UNK|UNK more élevé|UNK|UNK|UNK that the plupart|UNK|UNK|UNK of others country européens.|UNK|UNK|UNK [1111111111111111]  [total=-526.624] core=(-500.000,-16.000,15.000,-8.395,-11.811,-3.857,-12.661,-2.693,0.000,0.000,-2.411,0.000,0.000,0.000,-73.496)  
+Line 55: Translation took 0.000 seconds total
+Translating line 56  in thread id 140176936716032
+Translating: J'aime mes amis. 
+Line 56: Collecting options took 0.000 seconds
+Line 56: Search took 0.000 seconds
+BEST TRANSLATION: J'aime|UNK|UNK|UNK my amis.|UNK|UNK|UNK [111]  [total=-204.711] core=(-200.000,-3.000,3.000,-2.213,-2.110,-0.251,-0.486,-0.435,0.000,0.000,-0.125,0.000,0.000,0.000,-14.262)  
+Line 56: Translation took 0.000 seconds total
+Translating line 57  in thread id 140176936716032
+Translating: J'aime mes amies. 
+Line 57: Collecting options took 0.000 seconds
+Line 57: Search took 0.000 seconds
+BEST TRANSLATION: J'aime|UNK|UNK|UNK my amies.|UNK|UNK|UNK [111]  [total=-204.711] core=(-200.000,-3.000,3.000,-2.213,-2.110,-0.251,-0.486,-0.435,0.000,0.000,-0.125,0.000,0.000,0.000,-14.262)  
+Line 57: Translation took 0.000 seconds total
+Translating line 58  in thread id 140176936716032
+Translating: Tu m'as menti ! 
+Line 58: Collecting options took 0.000 seconds
+Line 58: Search took 0.000 seconds
+BEST TRANSLATION: You m'as|UNK|UNK|UNK menti|UNK|UNK|UNK ! [1111]  [total=-202.534] core=(-200.000,-4.000,4.000,-0.547,-0.530,-0.307,-0.270,-0.190,0.000,0.000,-0.110,0.000,0.000,0.000,-13.825)  
+Line 58: Translation took 0.000 seconds total
+Translating line 59  in thread id 140176936716032
+Translating: Ils avaient raison. 
+Line 59: Collecting options took 0.000 seconds
+Line 59: Search took 0.000 seconds
+BEST TRANSLATION: They had raison.|UNK|UNK|UNK [111]  [total=-107.910] core=(-100.000,-3.000,3.000,-3.219,-2.944,-0.981,-0.981,-0.762,0.000,0.000,-1.861,0.000,0.000,0.000,-18.197)  
+Line 59: Translation took 0.000 seconds total
+Translating line 60  in thread id 140176936716032
+Translating: Elles avaient raison. 
+Line 60: Collecting options took 0.000 seconds
+Line 60: Search took 0.000 seconds
+BEST TRANSLATION: Elles|UNK|UNK|UNK had raison.|UNK|UNK|UNK [111]  [total=-206.068] core=(-200.000,-3.000,3.000,-2.708,-2.251,-0.693,-0.693,-0.511,0.000,0.000,-1.609,0.000,0.000,0.000,-15.526)  
+Line 60: Translation took 0.000 seconds total
+Translating line 61  in thread id 140176936716032
+Translating: Le canon! Ils chargent le canon! Pourquoi? Ah! Ils vont tirer! Allez, plus vite! Un, deux, un, deux! 
+Line 61: Collecting options took 0.000 seconds
+Line 61: Search took 0.000 seconds
+BEST TRANSLATION: The canon!|UNK|UNK|UNK They chargent|UNK|UNK|UNK the canon!|UNK|UNK|UNK Pourquoi?|UNK|UNK|UNK Ah!|UNK|UNK|UNK They will tirer!|UNK|UNK|UNK Allez,|UNK|UNK|UNK more vite!|UNK|UNK|UNK Un,|UNK|UNK|UNK deux,|UNK|UNK|UNK un,|UNK|UNK|UNK deux!|UNK|UNK|UNK [111111111111111111]  [total=-1215.655] core=(-1200.000,-18.000,18.000,-6.230,-7.881,-1.985,-3.535,-1.413,0.000,0.000,-1.501,0.000,0.000,0.000,-64.909)  
+Line 61: Translation took 0.000 seconds total
+Translating line 62  in thread id 140176936716032
+Translating: Ce n'est jamais arrivé auparavant. 
+Line 62: Collecting options took 0.000 seconds
+Line 62: Search took 0.000 seconds
+BEST TRANSLATION: What n'est|UNK|UNK|UNK never arrivé|UNK|UNK|UNK auparavant.|UNK|UNK|UNK [11111]  [total=-306.698] core=(-300.000,-5.000,5.000,-2.741,-3.161,-1.828,-1.797,-0.762,0.000,0.000,-1.013,0.000,0.000,0.000,-20.520)  
+Line 62: Translation took 0.000 seconds total
+Translating line 63  in thread id 140176936716032
+Translating: La vie est une courte promenade avant le sommeil éternel. 
+Line 63: Collecting options took 0.000 seconds
+Line 63: Search took 0.000 seconds
+BEST TRANSLATION: Life is a courte|UNK|UNK|UNK promenade|UNK|UNK|UNK before the sleep éternel.|UNK|UNK|UNK [1111111111]  [total=-310.885] core=(-300.000,-9.000,9.000,-4.832,-6.889,-1.310,-3.736,-1.230,0.000,0.000,-0.836,0.000,0.000,0.000,-35.424)  
+Line 63: Translation took 0.000 seconds total
+Translating line 64  in thread id 140176936716032
+Translating: Es-tu une fille ou un garçon ? 
+Line 64: Collecting options took 0.000 seconds
+Line 64: Search took 0.000 seconds
+BEST TRANSLATION: Are you a girl or a garçon|UNK|UNK|UNK ? [1111111]  [total=-111.113] core=(-100.000,-8.000,6.000,-2.865,-4.399,-1.829,-2.823,-1.197,0.000,0.000,-1.116,0.000,0.000,0.000,-34.472)  
+Line 64: Translation took 0.000 seconds total
+Translating line 65  in thread id 140176936716032
+Translating: Émilie et Mélanie sont anglaises. 
+Line 65: Collecting options took 0.000 seconds
+Line 65: Search took 0.000 seconds
+BEST TRANSLATION: Émilie|UNK|UNK|UNK and Mélanie|UNK|UNK|UNK are anglaises.|UNK|UNK|UNK [11111]  [total=-305.923] core=(-300.000,-5.000,5.000,-1.063,-1.477,-0.064,-0.578,-0.267,0.000,0.000,-0.352,0.000,0.000,0.000,-22.201)  
+Line 65: Translation took 0.000 seconds total
+Translating line 66  in thread id 140176936716032
+Translating: Tirana est la capitale de l'Albanie. 
+Line 66: Collecting options took 0.000 seconds
+Line 66: Search took 0.000 seconds
+BEST TRANSLATION: Tirana|UNK|UNK|UNK is the capitale|UNK|UNK|UNK of l'Albanie.|UNK|UNK|UNK [111111]  [total=-306.415] core=(-300.000,-6.000,5.000,-0.736,-2.202,-1.203,-2.803,-0.216,0.000,0.000,-0.200,0.000,0.000,0.000,-23.802)  
+Line 66: Translation took 0.000 seconds total
+Translating line 67  in thread id 140176936716032
+Translating: Je me demande si Tom se souvient encore de moi. 
+Line 67: Collecting options took 0.000 seconds
+Line 67: Search took 0.000 seconds
+BEST TRANSLATION: I wonder if Tom are souvient|UNK|UNK|UNK still of moi.|UNK|UNK|UNK [1111111111]  [total=-217.823] core=(-200.000,-9.000,7.000,-4.746,-9.372,-2.083,-8.624,-1.532,0.000,0.000,-2.027,0.000,0.000,0.000,-44.380)  
+Line 67: Translation took 0.000 seconds total
+Translating line 68  in thread id 140176936716032
+Translating: L'enfant a reçu des leçons de piano et de chant. 
+Line 68: Collecting options took 0.000 seconds
+Line 68: Search took 0.000 seconds
+BEST TRANSLATION: L'enfant|UNK|UNK|UNK has reçu|UNK|UNK|UNK of leçons|UNK|UNK|UNK of piano and chant.|UNK|UNK|UNK [1111111111]  [total=-417.248] core=(-400.000,-9.000,9.000,-7.474,-5.686,-1.658,-6.686,-1.540,0.000,0.000,-2.411,0.000,0.000,0.000,-45.123)  
+Line 68: Translation took 0.000 seconds total
+Translating line 69  in thread id 140176936716032
+Translating: Je suis entré par la fenêtre. 
+Line 69: Collecting options took 0.000 seconds
+Line 69: Search took 0.000 seconds
+BEST TRANSLATION: I &apos;m entré|UNK|UNK|UNK by the fenêtre.|UNK|UNK|UNK [111111]  [total=-205.615] core=(-200.000,-6.000,6.000,-2.739,-3.782,-0.886,-2.386,-0.394,0.000,0.000,-0.412,0.000,0.000,0.000,-21.230)  
+Line 69: Translation took 0.000 seconds total
+Translating line 70  in thread id 140176936716032
+Translating: "Comment es-tu entré ici ?" "Par la fenêtre." 
+Line 70: Collecting options took 0.000 seconds
+Line 70: Search took 0.000 seconds
+BEST TRANSLATION: "Comment|UNK|UNK|UNK did you entré|UNK|UNK|UNK here ?"|UNK|UNK|UNK "Par|UNK|UNK|UNK the fenêtre."|UNK|UNK|UNK [11111111]  [total=-509.603] core=(-500.000,-9.000,8.000,-3.124,-4.211,-0.584,-2.355,-0.603,0.000,0.000,-0.511,0.000,0.000,0.000,-35.629)  
+Line 70: Translation took 0.000 seconds total
+Translating line 71  in thread id 140176936716032
+Translating: À quelle heure seras-tu de retour ? 
+Line 71: Collecting options took 0.000 seconds
+Line 71: Search took 0.000 seconds
+BEST TRANSLATION: At quelle|UNK|UNK|UNK hour seras-tu|UNK|UNK|UNK of retour|UNK|UNK|UNK ? [1111111]  [total=-310.586] core=(-300.000,-7.000,7.000,-1.504,-1.105,-0.739,-2.300,-1.150,0.000,0.000,-2.153,0.000,0.000,0.000,-33.732)  
+Line 71: Translation took 0.000 seconds total
+Translating line 72  in thread id 140176936716032
+Translating: Tom s'habillait. 
+Line 72: Collecting options took 0.000 seconds
+Line 72: Search took 0.000 seconds
+BEST TRANSLATION: Tom s'habillait.|UNK|UNK|UNK [11]  [total=-105.624] core=(-100.000,-2.000,2.000,0.000,0.000,0.000,0.000,-0.336,0.000,0.000,-0.847,0.000,0.000,0.000,-15.337)  
+Line 72: Translation took 0.000 seconds total
+Translating line 73  in thread id 140176936716032
+Translating: Tom s'est habillé. 
+Line 73: Collecting options took 0.000 seconds
+Line 73: Search took 0.000 seconds
+BEST TRANSLATION: Tom s'est|UNK|UNK|UNK habillé.|UNK|UNK|UNK [111]  [total=-205.446] core=(-200.000,-3.000,3.000,0.000,0.000,0.000,0.000,-0.336,0.000,0.000,-0.847,0.000,0.000,0.000,-17.381)  
+Line 73: Translation took 0.000 seconds total
+Translating line 74  in thread id 140176936716032
+Translating: Il est facile de perdre son équilibre lorsqu'on marche sur du gravier meuble. 
+Line 74: Collecting options took 0.000 seconds
+Line 74: Search took 0.000 seconds
+BEST TRANSLATION: It is facile|UNK|UNK|UNK to lose his équilibre|UNK|UNK|UNK lorsqu'on|UNK|UNK|UNK marche|UNK|UNK|UNK on the gravier|UNK|UNK|UNK meuble.|UNK|UNK|UNK [1111111111111]  [total=-614.542] core=(-600.000,-13.000,12.000,-10.894,-9.927,-3.697,-6.326,-3.700,0.000,0.000,-2.790,0.000,0.000,0.000,-43.652)  
+Line 74: Translation took 0.000 seconds total
+Translating line 75  in thread id 140176936716032
+Translating: C'est facile de perdre pied lorsqu'on marche sur du gravier. 
+Line 75: Collecting options took 0.000 seconds
+Line 75: Search took 0.000 seconds
+BEST TRANSLATION: C'est|UNK|UNK|UNK facile|UNK|UNK|UNK to lose pied|UNK|UNK|UNK lorsqu'on|UNK|UNK|UNK marche|UNK|UNK|UNK on the gravier.|UNK|UNK|UNK [1111111111]  [total=-610.777] core=(-600.000,-10.000,10.000,-7.849,-6.562,-2.598,-3.906,-3.069,0.000,0.000,-2.427,0.000,0.000,0.000,-33.889)  
+Line 75: Translation took 0.000 seconds total
+Translating line 76  in thread id 140176936716032
+Translating: De qui parles-tu? 
+Line 76: Collecting options took 0.000 seconds
+Line 76: Search took 0.000 seconds
+BEST TRANSLATION: What who parles-tu?|UNK|UNK|UNK [111]  [total=-105.764] core=(-100.000,-3.000,3.000,-1.902,-2.111,-0.336,-1.312,-0.246,0.000,0.000,-0.246,0.000,0.000,0.000,-16.169)  
+Line 76: Translation took 0.000 seconds total
+Translating line 77  in thread id 140176936716032
+Translating: De qui parlez-vous ? 
+Line 77: Collecting options took 0.000 seconds
+Line 77: Search took 0.000 seconds
+BEST TRANSLATION: What who you talking about ? [1111]  [total=-5.690] core=(0.000,-6.000,4.000,-2.824,-4.146,-0.342,-4.608,-0.661,0.000,0.000,-0.582,0.000,0.000,0.000,-19.466)  
+Line 77: Translation took 0.000 seconds total
+Translating line 78  in thread id 140176936716032
+Translating: Tom s'habilla. 
+Line 78: Collecting options took 0.000 seconds
+Line 78: Search took 0.000 seconds
+BEST TRANSLATION: Tom s'habilla.|UNK|UNK|UNK [11]  [total=-105.624] core=(-100.000,-2.000,2.000,0.000,0.000,0.000,0.000,-0.336,0.000,0.000,-0.847,0.000,0.000,0.000,-15.337)  
+Line 78: Translation took 0.000 seconds total
+Translating line 79  in thread id 140176936716032
+Translating: Oui, j'ai déjà vu des chats sans sourire; mais un sourire sans chat... 
+Line 79: Collecting options took 0.000 seconds
+Line 79: Search took 0.000 seconds
+BEST TRANSLATION: Oui,|UNK|UNK|UNK j'ai|UNK|UNK|UNK already vu|UNK|UNK|UNK of chats|UNK|UNK|UNK without sourire;|UNK|UNK|UNK but a smile without chat...|UNK|UNK|UNK [1111111111111]  [total=-618.982] core=(-600.000,-13.000,12.000,-3.274,-4.735,-1.427,-3.687,-1.723,0.000,0.000,-1.442,0.000,0.000,0.000,-61.616)  
+Line 79: Translation took 0.000 seconds total
+Translating line 80  in thread id 140176936716032
+Translating: Elle était vêtue d'un kimono. 
+Line 80: Collecting options took 0.000 seconds
+Line 80: Search took 0.000 seconds
+BEST TRANSLATION: She was vêtue|UNK|UNK|UNK d'un|UNK|UNK|UNK kimono.|UNK|UNK|UNK [11111]  [total=-303.677] core=(-300.000,-5.000,5.000,-0.956,-0.963,-0.049,-0.288,-0.209,0.000,0.000,-0.209,0.000,0.000,0.000,-18.201)  
+Line 80: Translation took 0.000 seconds total
+Translating line 81  in thread id 140176936716032
+Translating: Tu fais quelque chose demain soir? 
+Line 81: Collecting options took 0.000 seconds
+Line 81: Search took 0.000 seconds
+BEST TRANSLATION: I &apos;m something tomorrow soir?|UNK|UNK|UNK [111111]  [total=-112.926] core=(-100.000,-5.000,5.000,-9.095,-9.717,-4.143,-4.785,-1.507,0.000,0.000,-1.718,0.000,0.000,0.000,-24.821)  
+Line 81: Translation took 0.000 seconds total
+Translating line 82  in thread id 140176936716032
+Translating: Je vais te prouver que tu as tort. 
+Line 82: Collecting options took 0.000 seconds
+Line 82: Search took 0.000 seconds
+BEST TRANSLATION: I &apos;m going to prove you have tort.|UNK|UNK|UNK [11111111]  [total=-111.692] core=(-100.000,-8.000,6.000,-7.517,-14.174,-2.763,-7.287,-1.959,0.000,0.000,-2.580,0.000,0.000,0.000,-26.364)  
+Line 82: Translation took 0.000 seconds total
+Translating line 83  in thread id 140176936716032
+Translating: Oui, j'ai dit cela, mais j'avais tort. 
+Line 83: Collecting options took 0.000 seconds
+Line 83: Search took 0.000 seconds
+BEST TRANSLATION: Oui,|UNK|UNK|UNK j'ai|UNK|UNK|UNK said cela,|UNK|UNK|UNK but j'avais|UNK|UNK|UNK tort.|UNK|UNK|UNK [1111111]  [total=-507.233] core=(-500.000,-7.000,7.000,-0.953,-1.094,-1.240,-1.759,-0.363,0.000,0.000,-0.403,0.000,0.000,0.000,-28.788)  
+Line 83: Translation took 0.000 seconds total
+Translating line 84  in thread id 140176936716032
+Translating: Lis les instructions attentivement. 
+Line 84: Collecting options took 0.000 seconds
+Line 84: Search took 0.000 seconds
+BEST TRANSLATION: Lis|UNK|UNK|UNK the instructions|UNK|UNK|UNK attentivement.|UNK|UNK|UNK [1111]  [total=-303.677] core=(-300.000,-4.000,4.000,-1.770,-1.964,-0.254,-1.002,-0.107,0.000,0.000,-0.052,0.000,0.000,0.000,-14.862)  
+Line 84: Translation took 0.000 seconds total
+Translating line 85  in thread id 140176936716032
+Translating: Bouge pas. J'arrive. 
+Line 85: Collecting options took 0.000 seconds
+Line 85: Search took 0.000 seconds
+BEST TRANSLATION: Bouge|UNK|UNK|UNK pas.|UNK|UNK|UNK J'arrive.|UNK|UNK|UNK [111]  [total=-301.604] core=(-300.000,-3.000,3.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,-10.408)  
+Line 85: Translation took 0.000 seconds total
+Translating line 86  in thread id 140176936716032
+Translating: J'aime ces chapeaux. 
+Line 86: Collecting options took 0.000 seconds
+Line 86: Search took 0.000 seconds
+BEST TRANSLATION: J'aime|UNK|UNK|UNK these chapeaux.|UNK|UNK|UNK [111]  [total=-205.434] core=(-200.000,-3.000,3.000,0.000,0.000,-0.847,-0.693,-0.251,0.000,0.000,-0.588,0.000,0.000,0.000,-16.949)  
+Line 86: Translation took 0.000 seconds total
+Translating line 87  in thread id 140176936716032
+Translating: Je suis tombé amoureux d'une Viennoise. 
+Line 87: Collecting options took 0.000 seconds
+Line 87: Search took 0.000 seconds
+BEST TRANSLATION: I &apos;m tombé|UNK|UNK|UNK amoureux|UNK|UNK|UNK d'une|UNK|UNK|UNK Viennoise.|UNK|UNK|UNK [111111]  [total=-401.424] core=(-400.000,-6.000,6.000,-1.487,-1.867,-0.574,-0.706,-0.127,0.000,0.000,-0.237,0.000,0.000,0.000,-15.175)  
+Line 87: Translation took 0.000 seconds total
+Translating line 88  in thread id 140176936716032
+Translating: La barbe ne fait pas le philosophe, pas plus que de porter un manteau bon marché. 
+Line 88: Collecting options took 0.000 seconds
+Line 88: Search took 0.000 seconds
+BEST TRANSLATION: The barbe|UNK|UNK|UNK don &apos;t &apos;s not the philosophe,|UNK|UNK|UNK more than first a manteau|UNK|UNK|UNK good marché.|UNK|UNK|UNK [1111111111111111]  [total=-427.891] core=(-400.000,-15.000,14.000,-8.966,-11.693,-4.616,-12.393,-1.281,0.000,-4.464,-1.918,0.000,-1.783,-10.000,-64.648)  
+Line 88: Translation took 0.000 seconds total
+Translating line 89  in thread id 140176936716032
+Translating: Tom se pencha et ramassa une poignée de sable. 
+Line 89: Collecting options took 0.000 seconds
+Line 89: Search took 0.000 seconds
+BEST TRANSLATION: Tom are pencha|UNK|UNK|UNK and ramassa|UNK|UNK|UNK a poignée|UNK|UNK|UNK of sable.|UNK|UNK|UNK [111111111]  [total=-415.817] core=(-400.000,-9.000,9.000,-5.640,-6.490,-2.071,-5.892,-1.136,0.000,0.000,-1.663,0.000,0.000,0.000,-43.518)  
+Line 89: Translation took 0.000 seconds total
+Translating line 90  in thread id 140176936716032
+Translating: Une étude a révélé qu’il est possible d’accroître la production de lait de vaches laitières de trois pour cent après leur avoir fait écouter de la musique apaisante pendant douze heures par jour sur une période de neuf semaines. 
+Line 90: Collecting options took 0.000 seconds
+Line 90: Search took 1.000 seconds
+BEST TRANSLATION: An study has révélé|UNK|UNK|UNK qu’il|UNK|UNK|UNK is be d’accroître|UNK|UNK|UNK the production|UNK|UNK|UNK of lait|UNK|UNK|UNK of vaches|UNK|UNK|UNK laitières|UNK|UNK|UNK of three for cent|UNK|UNK|UNK after their have a écouter|UNK|UNK|UNK of music apaisante|UNK|UNK|UNK while twelve hours by day on a time to And they were new semaines.|UNK|UNK|UNK [111111111111111111111111111111111111111]  [total=-1180.018] core=(-1100.000,-41.000,38.000,-25.436,-36.899,-11.002,-31.923,-9.076,0.000,0.000,-8.225,0.000,0.000,0.000,-204.752)  
+Line 90: Translation took 1.000 seconds total
+Translating line 91  in thread id 140176936716032
+Translating: Elle ouvre la porte. 
+Line 91: Collecting options took 0.000 seconds
+Line 91: Search took 0.000 seconds
+BEST TRANSLATION: She ouvre|UNK|UNK|UNK the porte.|UNK|UNK|UNK [1111]  [total=-204.625] core=(-200.000,-4.000,4.000,-1.000,-1.222,-0.178,-0.681,-0.252,0.000,0.000,-0.160,0.000,0.000,0.000,-17.369)  
+Line 91: Translation took 0.000 seconds total
+Translating line 92  in thread id 140176936716032
+Translating: J'aime les Japonaises. 
+Line 92: Collecting options took 0.000 seconds
+Line 92: Search took 0.000 seconds
+BEST TRANSLATION: J'aime|UNK|UNK|UNK the Japonaises.|UNK|UNK|UNK [111]  [total=-203.855] core=(-200.000,-3.000,3.000,-1.770,-1.964,-0.254,-1.002,-0.107,0.000,0.000,-0.052,0.000,0.000,0.000,-12.818)  
+Line 92: Translation took 0.000 seconds total
+Translating line 93  in thread id 140176936716032
+Translating: C'est normal de faire des erreurs. 
+Line 93: Collecting options took 0.000 seconds
+Line 93: Search took 0.000 seconds
+BEST TRANSLATION: C'est|UNK|UNK|UNK normal|UNK|UNK|UNK to do of erreurs.|UNK|UNK|UNK [111111]  [total=-312.135] core=(-300.000,-6.000,6.000,-5.158,-5.053,-2.174,-4.829,-0.660,0.000,0.000,-0.671,0.000,0.000,0.000,-30.986)  
+Line 93: Translation took 0.000 seconds total
+Translating line 94  in thread id 140176936716032
+Translating: Je suis sûr que je ne l'ai jamais vue. 
+Line 94: Collecting options took 0.000 seconds
+Line 94: Search took 0.000 seconds
+BEST TRANSLATION: I &apos;m you sure that I don l'ai|UNK|UNK|UNK never vue.|UNK|UNK|UNK [111111111]  [total=-215.131] core=(-200.000,-10.000,7.000,-3.192,-6.501,-1.555,-5.038,-1.427,0.000,0.000,-3.397,0.000,0.000,0.000,-43.653)  
+Line 94: Translation took 0.000 seconds total
+Translating line 95  in thread id 140176936716032
+Translating: Je ne parle pas très bien l'arabe. 
+Line 95: Collecting options took 0.000 seconds
+Line 95: Search took 0.000 seconds
+BEST TRANSLATION: I don &apos;t speak very well l'arabe.|UNK|UNK|UNK [1111111]  [total=-106.462] core=(-100.000,-7.000,4.000,0.000,-3.284,-1.540,-4.838,-1.176,0.000,0.000,-1.050,0.000,0.000,0.000,-23.324)  
+Line 95: Translation took 0.000 seconds total
+Translating line 96  in thread id 140176936716032
+Translating: Ton amitié importe. 
+Line 96: Collecting options took 0.000 seconds
+Line 96: Search took 0.000 seconds
+BEST TRANSLATION: Your amitié|UNK|UNK|UNK importe.|UNK|UNK|UNK [111]  [total=-204.139] core=(-200.000,-3.000,3.000,-0.693,-0.693,0.000,0.000,-0.511,0.000,0.000,-0.511,0.000,0.000,0.000,-14.311)  
+Line 96: Translation took 0.000 seconds total
+Translating line 97  in thread id 140176936716032
+Translating: Tom est devenu anorexique lorsqu'il était étudiant au lycée. 
+Line 97: Collecting options took 0.000 seconds
+Line 97: Search took 0.000 seconds
+BEST TRANSLATION: Tom is devenu|UNK|UNK|UNK anorexique|UNK|UNK|UNK lorsqu'il|UNK|UNK|UNK was student in lycée.|UNK|UNK|UNK [111111111]  [total=-416.360] core=(-400.000,-9.000,9.000,-4.049,-4.107,-1.463,-2.857,-1.186,0.000,0.000,-1.661,0.000,0.000,0.000,-47.622)  
+Line 97: Translation took 0.000 seconds total
+Translating line 98  in thread id 140176936716032
+Translating: Ils m'ont kidnappé, ils m'ont drogué et alors ils m'ont lavé le cerveau. 
+Line 98: Collecting options took 0.000 seconds
+Line 98: Search took 0.000 seconds
+BEST TRANSLATION: They m'ont|UNK|UNK|UNK kidnappé,|UNK|UNK|UNK they m'ont|UNK|UNK|UNK drogué|UNK|UNK|UNK and what they m'ont|UNK|UNK|UNK lavé|UNK|UNK|UNK the cerveau.|UNK|UNK|UNK [1111111111111]  [total=-714.727] core=(-700.000,-13.000,13.000,-8.185,-8.211,-2.169,-3.532,-1.158,0.000,0.000,-1.487,0.000,0.000,0.000,-50.228)  
+Line 98: Translation took 0.000 seconds total
+Translating line 99  in thread id 140176936716032
+Translating: Certains pensent que la pub est une forme de lavage de cerveaux. 
+Line 99: Collecting options took 0.000 seconds
+Line 99: Search took 0.000 seconds
+BEST TRANSLATION: Certains|UNK|UNK|UNK think the pub|UNK|UNK|UNK is a form of washing of cerveaux.|UNK|UNK|UNK [111111111111]  [total=-319.227] core=(-300.000,-11.000,10.000,-5.525,-7.678,-1.564,-6.203,-1.871,0.000,0.000,-1.625,0.000,0.000,0.000,-53.969)  
+Line 99: Translation took 0.000 seconds total
+Translating line 100  in thread id 140176936716032
+Translating: Je sais exactement où il se trouve. 
+Line 100: Collecting options took 0.000 seconds
+Line 100: Search took 0.000 seconds
+BEST TRANSLATION: I exactement|UNK|UNK|UNK know where it are trouve.|UNK|UNK|UNK [1111111]  [total=-215.508] core=(-200.000,-7.000,7.000,-8.720,-9.351,-3.525,-7.325,-0.691,-0.379,-0.847,-1.215,0.000,-2.296,-4.000,-30.591)  
+Line 100: Translation took 0.000 seconds total
+Translating line 101  in thread id 140176936716032
+Translating: Le chat aime jouer dans le jardin. 
+Line 101: Collecting options took 0.000 seconds
+Line 101: Search took 0.000 seconds
+BEST TRANSLATION: The chat|UNK|UNK|UNK like will in the jardin.|UNK|UNK|UNK [1111111]  [total=-212.016] core=(-200.000,-7.000,7.000,-6.797,-8.653,-0.640,-3.112,-2.351,0.000,0.000,-2.744,0.000,0.000,0.000,-30.094)  
+Line 101: Translation took 0.000 seconds total
+Translating line 102  in thread id 140176936716032
+Translating: Ce système d'équations linéaires a exactement une seule solution. 
+Line 102: Collecting options took 0.000 seconds
+Line 102: Search took 0.000 seconds
+BEST TRANSLATION: What système|UNK|UNK|UNK d'équations|UNK|UNK|UNK linéaires|UNK|UNK|UNK has exactement|UNK|UNK|UNK a alone solution.|UNK|UNK|UNK [111111111]  [total=-511.926] core=(-500.000,-9.000,9.000,-4.210,-4.771,-2.571,-4.519,-0.913,0.000,0.000,-0.600,0.000,0.000,0.000,-38.116)  
+Line 102: Translation took 0.000 seconds total
+Translating line 103  in thread id 140176936716032
+Translating: Un chat est un petit lion qui aime les souris, déteste les chiens et tolère les humains. 
+Line 103: Collecting options took 0.000 seconds
+Line 103: Search took 0.000 seconds
+BEST TRANSLATION: A chat|UNK|UNK|UNK is a little lion|UNK|UNK|UNK who like the souris,|UNK|UNK|UNK hate the chiens|UNK|UNK|UNK and tolère|UNK|UNK|UNK the humains.|UNK|UNK|UNK [11111111111111111]  [total=-623.071] core=(-600.000,-17.000,16.000,-7.507,-9.307,-2.834,-7.025,-1.777,0.000,0.000,-2.123,0.000,0.000,0.000,-73.534)  
+Line 103: Translation took 0.000 seconds total
+Translating line 104  in thread id 140176936716032
+Translating: Le vin était excellent. 
+Line 104: Collecting options took 0.000 seconds
+Line 104: Search took 0.000 seconds
+BEST TRANSLATION: The vin|UNK|UNK|UNK was excellent.|UNK|UNK|UNK [1111]  [total=-204.189] core=(-200.000,-4.000,4.000,-1.681,-1.689,-0.049,-0.413,-0.130,0.000,0.000,-0.163,0.000,0.000,0.000,-16.270)  
+Line 104: Translation took 0.000 seconds total
+Translating line 105  in thread id 140176936716032
+Translating: Ne nourrissez pas les trolls. 
+Line 105: Collecting options took 0.000 seconds
+Line 105: Search took 0.000 seconds
+BEST TRANSLATION: Don &apos;t have the trolls.|UNK|UNK|UNK nourrissez|UNK|UNK|UNK [11111]  [total=-206.195] core=(-200.000,-6.000,4.000,-0.693,-2.818,-0.916,-6.051,-0.201,0.000,-0.511,-0.511,0.000,-0.788,-5.000,-17.592)  
+Line 105: Translation took 0.000 seconds total
+Translating line 106  in thread id 140176936716032
+Translating: Je suis amoureux d'une fille géniale. 
+Line 106: Collecting options took 0.000 seconds
+Line 106: Search took 0.000 seconds
+BEST TRANSLATION: I &apos;m amoureux|UNK|UNK|UNK d'une|UNK|UNK|UNK girl géniale.|UNK|UNK|UNK [111111]  [total=-304.738] core=(-300.000,-6.000,6.000,-1.487,-1.867,-0.574,-0.706,-0.328,0.000,0.000,-0.438,0.000,0.000,0.000,-21.562)  
+Line 106: Translation took 0.000 seconds total
+Translating line 107  in thread id 140176936716032
+Translating: La littérature est l'avenir d'une nation. 
+Line 107: Collecting options took 0.000 seconds
+Line 107: Search took 0.000 seconds
+BEST TRANSLATION: The littérature|UNK|UNK|UNK is l'avenir|UNK|UNK|UNK d'une|UNK|UNK|UNK nation.|UNK|UNK|UNK [111111]  [total=-403.884] core=(-400.000,-6.000,6.000,-1.791,-1.930,-0.721,-1.614,-0.241,0.000,0.000,-0.206,0.000,0.000,0.000,-19.478)  
+Line 107: Translation took 0.000 seconds total
+Translating line 108  in thread id 140176936716032
+Translating: Son corps est parfait. 
+Line 108: Collecting options took 0.000 seconds
+Line 108: Search took 0.000 seconds
+BEST TRANSLATION: His body is parfait.|UNK|UNK|UNK [1111]  [total=-107.611] core=(-100.000,-4.000,3.000,-0.405,-0.693,0.000,-0.515,-0.847,0.000,0.000,-0.847,0.000,0.000,0.000,-22.759)  
+Line 108: Translation took 0.000 seconds total
+Translating line 109  in thread id 140176936716032
+Translating: Son corps est parfait. 
+Line 109: Collecting options took 0.000 seconds
+Line 109: Search took 0.000 seconds
+BEST TRANSLATION: His body is parfait.|UNK|UNK|UNK [1111]  [total=-107.611] core=(-100.000,-4.000,3.000,-0.405,-0.693,0.000,-0.515,-0.847,0.000,0.000,-0.847,0.000,0.000,0.000,-22.759)  
+Line 109: Translation took 0.000 seconds total
+Translating line 110  in thread id 140176936716032
+Translating: "Tu veux essayer ?" "Pourquoi pas ?" 
+Line 110: Collecting options took 0.000 seconds
+Line 110: Search took 0.000 seconds
+BEST TRANSLATION: "Tu|UNK|UNK|UNK want to essayer|UNK|UNK|UNK ?"|UNK|UNK|UNK "Pourquoi|UNK|UNK|UNK &apos;t ?"|UNK|UNK|UNK [1111111]  [total=-506.779] core=(-500.000,-8.000,7.000,-0.460,-0.785,-1.306,-1.911,-2.183,0.000,0.000,-2.632,0.000,0.000,0.000,-27.685)  
+Line 110: Translation took 0.000 seconds total
+Translating line 111  in thread id 140176936716032
+Translating: Ces réunions sont infinies et infructueuses. 
+Line 111: Collecting options took 0.000 seconds
+Line 111: Search took 0.000 seconds
+BEST TRANSLATION: Ces|UNK|UNK|UNK réunions|UNK|UNK|UNK are infinies|UNK|UNK|UNK and infructueuses.|UNK|UNK|UNK [111111]  [total=-405.745] core=(-400.000,-6.000,6.000,-1.063,-1.477,-0.064,-0.578,-0.267,0.000,0.000,-0.352,0.000,0.000,0.000,-24.244)  
+Line 111: Translation took 0.000 seconds total
+Translating line 112  in thread id 140176936716032
+Translating: Je vous remercie d'avoir accepté mon invitation. 
+Line 112: Collecting options took 0.000 seconds
+Line 112: Search took 0.000 seconds
+BEST TRANSLATION: I you remercie|UNK|UNK|UNK d'avoir|UNK|UNK|UNK accepté|UNK|UNK|UNK my invitation.|UNK|UNK|UNK [1111111]  [total=-406.361] core=(-400.000,-7.000,7.000,-4.037,-4.290,-0.294,-0.584,-0.424,0.000,0.000,-0.359,0.000,0.000,0.000,-25.369)  
+Line 112: Translation took 0.000 seconds total
+Translating line 113  in thread id 140176936716032
+Translating: Tom cessa soudainement de parler. 
+Line 113: Collecting options took 0.000 seconds
+Line 113: Search took 0.000 seconds
+BEST TRANSLATION: Tom cessa|UNK|UNK|UNK soudainement|UNK|UNK|UNK of parler.|UNK|UNK|UNK [11111]  [total=-307.487] core=(-300.000,-5.000,5.000,-0.400,-0.693,-0.733,-1.606,-0.386,0.000,0.000,-0.880,0.000,0.000,0.000,-24.842)  
+Line 113: Translation took 0.000 seconds total
+Translating line 114  in thread id 140176936716032
+Translating: Tom a-t-il oublié de payer ? 
+Line 114: Collecting options took 0.000 seconds
+Line 114: Search took 0.000 seconds
+BEST TRANSLATION: Tom a-t-il|UNK|UNK|UNK oublié|UNK|UNK|UNK of payer|UNK|UNK|UNK ? [111111]  [total=-307.306] core=(-300.000,-6.000,6.000,-0.406,-0.699,-0.739,-1.606,-0.465,0.000,0.000,-0.880,0.000,0.000,0.000,-26.824)  
+Line 114: Translation took 0.000 seconds total
+Translating line 115  in thread id 140176936716032
+Translating: Le professeur a donné à Tom la permission de faire tout ce qu'il désire. 
+Line 115: Collecting options took 0.000 seconds
+Line 115: Search took 0.000 seconds
+BEST TRANSLATION: The professeur|UNK|UNK|UNK has given to Tom the permission|UNK|UNK|UNK to make everything qu'il|UNK|UNK|UNK désire.|UNK|UNK|UNK [11111111111111]  [total=-421.578] core=(-400.000,-13.000,11.000,-6.974,-11.735,-1.913,-11.363,-3.262,0.000,0.000,-4.831,0.000,0.000,0.000,-55.906)  
+Line 115: Translation took 0.000 seconds total
+Translating line 116  in thread id 140176936716032
+Translating: Je n'aime pas la neige. 
+Line 116: Collecting options took 0.000 seconds
+Line 116: Search took 0.000 seconds
+BEST TRANSLATION: I n'aime|UNK|UNK|UNK &apos;t the neige.|UNK|UNK|UNK [11111]  [total=-206.186] core=(-200.000,-5.000,5.000,-2.000,-2.188,-0.500,-1.147,-1.167,0.000,0.000,-1.634,0.000,0.000,0.000,-20.358)  
+Line 116: Translation took 0.000 seconds total
+Translating line 117  in thread id 140176936716032
+Translating: Tom a demandé à Marie de s'occuper des enfants. 
+Line 117: Collecting options took 0.000 seconds
+Line 117: Search took 0.000 seconds
+BEST TRANSLATION: Tom asked to Marie|UNK|UNK|UNK of s'occuper|UNK|UNK|UNK of enfants.|UNK|UNK|UNK [111111111]  [total=-315.835] core=(-300.000,-8.000,8.000,-5.399,-6.857,-1.418,-5.395,-1.261,0.000,0.000,-1.438,0.000,0.000,0.000,-41.622)  
+Line 117: Translation took 0.000 seconds total
+Translating line 118  in thread id 140176936716032
+Translating: Tom a demandé à Marie de surveiller les enfants. 
+Line 118: Collecting options took 0.000 seconds
+Line 118: Search took 0.000 seconds
+BEST TRANSLATION: Tom asked to Marie|UNK|UNK|UNK of surveiller|UNK|UNK|UNK the enfants.|UNK|UNK|UNK [111111111]  [total=-314.814] core=(-300.000,-8.000,8.000,-4.268,-6.592,-1.336,-4.441,-1.201,0.000,0.000,-1.322,0.000,0.000,0.000,-40.659)  
+Line 118: Translation took 0.000 seconds total
+Translating line 119  in thread id 140176936716032
+Translating: J'ai détruit toutes les preuves. 
+Line 119: Collecting options took 0.000 seconds
+Line 119: Search took 0.000 seconds
+BEST TRANSLATION: J'ai|UNK|UNK|UNK détruit|UNK|UNK|UNK toutes|UNK|UNK|UNK the preuves.|UNK|UNK|UNK [11111]  [total=-403.499] core=(-400.000,-5.000,5.000,-1.770,-1.964,-0.254,-1.002,-0.107,0.000,0.000,-0.052,0.000,0.000,0.000,-16.906)  
+Line 119: Translation took 0.000 seconds total
+Translating line 120  in thread id 140176936716032
+Translating: Je n'aurais pu faire autrement. 
+Line 120: Collecting options took 0.000 seconds
+Line 120: Search took 0.000 seconds
+BEST TRANSLATION: I n'aurais|UNK|UNK|UNK able to do autrement.|UNK|UNK|UNK [11111]  [total=-207.235] core=(-200.000,-6.000,5.000,-3.558,-4.004,-1.105,-3.201,-0.624,0.000,0.000,-0.845,0.000,0.000,0.000,-22.841)  
+Line 120: Translation took 0.000 seconds total
+Translating line 121  in thread id 140176936716032
+Translating: Les bactéries sont invisibles à l'oeil nu. 
+Line 121: Collecting options took 0.000 seconds
+Line 121: Search took 0.000 seconds
+BEST TRANSLATION: The bactéries|UNK|UNK|UNK are invisibles|UNK|UNK|UNK to l'oeil|UNK|UNK|UNK nu.|UNK|UNK|UNK [1111111]  [total=-406.598] core=(-400.000,-7.000,7.000,-3.722,-4.715,-0.655,-2.696,-0.398,0.000,0.000,-0.367,0.000,0.000,0.000,-24.821)  
+Line 121: Translation took 0.000 seconds total
+Translating line 122  in thread id 140176936716032
+Translating: Marie s'est couverte. 
+Line 122: Collecting options took 0.000 seconds
+Line 122: Search took 0.000 seconds
+BEST TRANSLATION: Marie|UNK|UNK|UNK s'est|UNK|UNK|UNK couverte.|UNK|UNK|UNK [111]  [total=-301.604] core=(-300.000,-3.000,3.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,-10.408)  
+Line 122: Translation took 0.000 seconds total
+Translating line 123  in thread id 140176936716032
+Translating: Marie éternuait. 
+Line 123: Collecting options took 0.000 seconds
+Line 123: Search took 0.000 seconds
+BEST TRANSLATION: Marie|UNK|UNK|UNK éternuait.|UNK|UNK|UNK [11]  [total=-201.782] core=(-200.000,-2.000,2.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,-8.365)  
+Line 123: Translation took 0.000 seconds total
+Translating line 124  in thread id 140176936716032
+Translating: Marie a éternué. 
+Line 124: Collecting options took 0.000 seconds
+Line 124: Search took 0.000 seconds
+BEST TRANSLATION: Marie|UNK|UNK|UNK has éternué.|UNK|UNK|UNK [111]  [total=-204.953] core=(-200.000,-3.000,3.000,-0.095,-0.336,-0.588,-2.163,-0.302,0.000,0.000,-0.091,0.000,0.000,0.000,-15.597)  
+Line 124: Translation took 0.000 seconds total
+Translating line 125  in thread id 140176936716032
+Translating: Rien n'annonçait les ennuis mais les clés glissèrent soudain de mes mains. 
+Line 125: Collecting options took 0.000 seconds
+Line 125: Search took 0.000 seconds
+BEST TRANSLATION: Rien|UNK|UNK|UNK n'annonçait|UNK|UNK|UNK the ennuis|UNK|UNK|UNK but the clés|UNK|UNK|UNK glissèrent|UNK|UNK|UNK soudain|UNK|UNK|UNK of my mains.|UNK|UNK|UNK [111111111111]  [total=-710.429] core=(-700.000,-12.000,12.000,-6.257,-6.869,-1.529,-4.133,-0.809,0.000,0.000,-0.413,0.000,0.000,0.000,-41.410)  
+Line 125: Translation took 0.000 seconds total
+Translating line 126  in thread id 140176936716032
+Translating: Marie a grandi. 
+Line 126: Collecting options took 0.000 seconds
+Line 126: Search took 0.000 seconds
+BEST TRANSLATION: Marie|UNK|UNK|UNK has grandi.|UNK|UNK|UNK [111]  [total=-204.953] core=(-200.000,-3.000,3.000,-0.095,-0.336,-0.588,-2.163,-0.302,0.000,0.000,-0.091,0.000,0.000,0.000,-15.597)  
+Line 126: Translation took 0.000 seconds total
+Translating line 127  in thread id 140176936716032
+Translating: Marie a démarré. 
+Line 127: Collecting options took 0.000 seconds
+Line 127: Search took 0.000 seconds
+BEST TRANSLATION: Marie|UNK|UNK|UNK has démarré.|UNK|UNK|UNK [111]  [total=-204.953] core=(-200.000,-3.000,3.000,-0.095,-0.336,-0.588,-2.163,-0.302,0.000,0.000,-0.091,0.000,0.000,0.000,-15.597)  
+Line 127: Translation took 0.000 seconds total
+Translating line 128  in thread id 140176936716032
+Translating: Cette phrase sonne bien, mais ce n'est pas grammaticalement correcte. 
+Line 128: Collecting options took 0.000 seconds
+Line 128: Search took 0.000 seconds
+BEST TRANSLATION: This is ringing phrase bien,|UNK|UNK|UNK but this n'est|UNK|UNK|UNK &apos;t grammaticalement|UNK|UNK|UNK correcte.|UNK|UNK|UNK [1111111111]  [total=-418.696] core=(-400.000,-11.000,10.000,-3.572,-4.802,-1.556,-3.883,-1.971,-1.609,-1.946,-1.713,-1.946,-3.219,-4.000,-48.024)  
+Line 128: Translation took 0.000 seconds total
+Translating line 129  in thread id 140176936716032
+Translating: On avait proposé d’abord de l’écorcher vif, de lui couler du plomb dans les entrailles, de le faire mourir de faim. 
+Line 129: Collecting options took 0.000 seconds
+Line 129: Search took 0.000 seconds
+BEST TRANSLATION: We had proposé|UNK|UNK|UNK d’abord|UNK|UNK|UNK of l’écorcher|UNK|UNK|UNK vif,|UNK|UNK|UNK to him couler|UNK|UNK|UNK the plomb|UNK|UNK|UNK in the entrailles,|UNK|UNK|UNK of the do die of faim.|UNK|UNK|UNK [111111111111111111111]  [total=-830.734] core=(-800.000,-21.000,21.000,-15.486,-15.941,-7.379,-13.621,-3.649,0.000,0.000,-4.453,0.000,0.000,0.000,-86.036)  
+Line 129: Translation took 0.000 seconds total
+Translating line 130  in thread id 140176936716032
+Translating: On l’attacherait contre un arbre, et un singe, derrière lui, le frapperait sur la tête avec une pierre. 
+Line 130: Collecting options took 0.000 seconds
+Line 130: Search took 0.000 seconds
+BEST TRANSLATION: We l’attacherait|UNK|UNK|UNK against a arbre,|UNK|UNK|UNK and a singe,|UNK|UNK|UNK behind lui,|UNK|UNK|UNK the frapperait|UNK|UNK|UNK on the with a pierre.|UNK|UNK|UNK [111111111111111111]  [total=-625.979] core=(-600.000,-17.000,17.000,-11.361,-16.599,-4.506,-6.811,-3.791,0.000,0.000,-4.241,0.000,0.000,0.000,-72.228)  
+Line 130: Translation took 0.000 seconds total
+Translating line 131  in thread id 140176936716032
+Translating: Il y avait au milieu du cercle une colonne de cuivre supportant un œuf de cristal; et, comme le soleil frappait dessus, des rayons de tous les côtés en partaient. 
+Line 131: Collecting options took 0.000 seconds
+Line 131: Search took 0.000 seconds
+BEST TRANSLATION: There was in the milieu|UNK|UNK|UNK cercle|UNK|UNK|UNK a colonne|UNK|UNK|UNK of cuivre|UNK|UNK|UNK supportant|UNK|UNK|UNK a œuf|UNK|UNK|UNK of cristal;|UNK|UNK|UNK et,|UNK|UNK|UNK like the soleil|UNK|UNK|UNK frappait|UNK|UNK|UNK dessus,|UNK|UNK|UNK of rayons|UNK|UNK|UNK of all the côtés|UNK|UNK|UNK in partaient.|UNK|UNK|UNK [111111111111111111111111111111]  [total=-1431.834] core=(-1400.000,-29.000,26.000,-15.551,-23.716,-5.435,-18.517,-2.120,0.000,-0.511,-1.482,-1.609,-2.197,-4.000,-99.629)  
+Line 131: Translation took 0.000 seconds total
+Translating line 132  in thread id 140176936716032
+Translating: La multitude encombrait les rues. 
+Line 132: Collecting options took 0.000 seconds
+Line 132: Search took 0.000 seconds
+BEST TRANSLATION: The multitude encombrait|UNK|UNK|UNK the rues.|UNK|UNK|UNK [11111]  [total=-208.299] core=(-200.000,-5.000,5.000,-3.412,-3.606,-0.542,-2.101,-0.695,0.000,0.000,-0.640,0.000,0.000,0.000,-23.933)  
+Line 132: Translation took 0.000 seconds total
+Translating line 133  in thread id 140176936716032
+Translating: Le festin devait durer toute la nuit. 
+Line 133: Collecting options took 0.000 seconds
+Line 133: Search took 1.000 seconds
+BEST TRANSLATION: The festin|UNK|UNK|UNK anyone durer|UNK|UNK|UNK toute|UNK|UNK|UNK the nuit.|UNK|UNK|UNK [1111111]  [total=-407.981] core=(-400.000,-7.000,7.000,-3.518,-4.145,-0.871,-0.806,-1.783,0.000,0.000,-1.724,0.000,0.000,0.000,-26.922)  
+Line 133: Translation took 1.000 seconds total
+Translating line 134  in thread id 140176936716032
+Translating: La lumière l’éblouissait, il resta quelque temps immobile. 
+Line 134: Collecting options took 0.000 seconds
+Line 134: Search took 0.000 seconds
+BEST TRANSLATION: The lumière|UNK|UNK|UNK l’éblouissait,|UNK|UNK|UNK he resta|UNK|UNK|UNK quelque|UNK|UNK|UNK time immobile.|UNK|UNK|UNK [11111111]  [total=-507.268] core=(-500.000,-8.000,8.000,-2.670,-2.353,-0.648,-2.671,-0.422,0.000,0.000,-0.374,0.000,0.000,0.000,-29.921)  
+Line 134: Translation took 0.000 seconds total
+Translating line 135  in thread id 140176936716032
+Translating: Tous l’avaient reconnu. 
+Line 135: Collecting options took 0.000 seconds
+Line 135: Search took 0.000 seconds
+BEST TRANSLATION: All l’avaient|UNK|UNK|UNK reconnu.|UNK|UNK|UNK [111]  [total=-204.069] core=(-200.000,-3.000,3.000,-1.099,-1.099,0.000,0.000,-0.511,0.000,0.000,-0.511,0.000,0.000,0.000,-13.847)  
+Line 135: Translation took 0.000 seconds total
+Translating line 136  in thread id 140176936716032
+Translating: L’escalier de l’Acropole avait soixante marches. 
+Line 136: Collecting options took 0.000 seconds
+Line 136: Search took 0.000 seconds
+BEST TRANSLATION: L’escalier|UNK|UNK|UNK of l’Acropole|UNK|UNK|UNK had soixante|UNK|UNK|UNK marches.|UNK|UNK|UNK [111111]  [total=-406.607] core=(-400.000,-6.000,6.000,-0.710,-1.240,-1.108,-2.099,-0.324,0.000,0.000,-0.543,0.000,0.000,0.000,-25.030)  
+Line 136: Translation took 0.000 seconds total
+Translating line 137  in thread id 140176936716032
+Translating: Les esclaves du Conseil le frappèrent avec leurs fouets en cuir d’hippopotame. 
+Line 137: Collecting options took 0.000 seconds
+Line 137: Search took 0.000 seconds
+BEST TRANSLATION: The esclaves|UNK|UNK|UNK the Conseil|UNK|UNK|UNK the frappèrent|UNK|UNK|UNK with their fouets|UNK|UNK|UNK in cuir|UNK|UNK|UNK d’hippopotame.|UNK|UNK|UNK [111111111111]  [total=-615.943] core=(-600.000,-12.000,12.000,-11.107,-9.385,-1.748,-5.558,-2.667,0.000,0.000,-2.122,0.000,0.000,0.000,-46.693)  
+Line 137: Translation took 0.000 seconds total
+Translating line 138  in thread id 140176936716032
+Translating: Il est accroc à Farmville. 
+Line 138: Collecting options took 0.000 seconds
+Line 138: Search took 0.000 seconds
+BEST TRANSLATION: It is accroc|UNK|UNK|UNK to Farmville.|UNK|UNK|UNK [11111]  [total=-204.514] core=(-200.000,-5.000,4.000,-2.386,-3.538,-1.041,-2.831,-0.372,0.000,0.000,-0.391,0.000,0.000,0.000,-16.253)  
+Line 138: Translation took 0.000 seconds total
+Translating line 139  in thread id 140176936716032
+Translating: Elle peut venir. 
+Line 139: Collecting options took 0.000 seconds
+Line 139: Search took 0.000 seconds
+BEST TRANSLATION: She can venir.|UNK|UNK|UNK [111]  [total=-106.057] core=(-100.000,-3.000,3.000,-1.305,-1.484,-0.172,-0.633,-0.233,0.000,0.000,-0.371,0.000,0.000,0.000,-17.514)  
+Line 139: Translation took 0.000 seconds total
+Translating line 140  in thread id 140176936716032
+Translating: Vous pouvez venir. 
+Line 140: Collecting options took 0.000 seconds
+Line 140: Search took 0.000 seconds
+BEST TRANSLATION: You can venir.|UNK|UNK|UNK [111]  [total=-104.235] core=(-100.000,-3.000,2.000,-1.792,-6.603,0.000,-0.606,-0.511,0.000,0.000,-0.511,0.000,0.000,0.000,-11.058)  
+Line 140: Translation took 0.000 seconds total
+Translating line 141  in thread id 140176936716032
+Translating: L'écriture de Tom n'est pas très bonne, mais elle est facile à lire. 
+Line 141: Collecting options took 0.000 seconds
+Line 141: Search took 0.000 seconds
+BEST TRANSLATION: L'écriture|UNK|UNK|UNK of Tom n'est|UNK|UNK|UNK &apos;t very bonne,|UNK|UNK|UNK but it is facile|UNK|UNK|UNK to lire.|UNK|UNK|UNK [1111111111111]  [total=-519.544] core=(-500.000,-13.000,12.000,-3.531,-7.265,-1.875,-5.821,-2.477,0.000,0.000,-3.354,0.000,0.000,0.000,-58.992)  
+Line 141: Translation took 0.000 seconds total
+Translating line 142  in thread id 140176936716032
+Translating: Aujourd'hui, ce n'est pas Noël ! 
+Line 142: Collecting options took 0.000 seconds
+Line 142: Search took 0.000 seconds
+BEST TRANSLATION: Aujourd'hui,|UNK|UNK|UNK what n'est|UNK|UNK|UNK &apos;t Christmas ! [111111]  [total=-209.116] core=(-200.000,-6.000,5.000,-1.508,-0.983,-1.232,-1.468,-1.875,0.000,0.000,-1.713,0.000,0.000,0.000,-28.002)  
+Line 142: Translation took 0.000 seconds total
+Translating line 143  in thread id 140176936716032
+Translating: Je n'aime pas les coqs. 
+Line 143: Collecting options took 0.000 seconds
+Line 143: Search took 0.000 seconds
+BEST TRANSLATION: I don &apos;t have the coqs.|UNK|UNK|UNK n'aime|UNK|UNK|UNK [11111]  [total=-206.036] core=(-200.000,-7.000,4.000,-1.612,-2.930,-0.700,-11.044,-0.013,0.000,-1.609,-0.511,0.000,-2.184,-5.000,-15.568)  
+Line 143: Translation took 0.000 seconds total
+Translating line 144  in thread id 140176936716032
+Translating: Il paraît qu'il y a une rareté de salles de discussions autrichiennes dans le Web. 
+Line 144: Collecting options took 0.000 seconds
+Line 144: Search took 0.000 seconds
+BEST TRANSLATION: He paraît|UNK|UNK|UNK qu'il|UNK|UNK|UNK &apos;s a rareté|UNK|UNK|UNK of salles|UNK|UNK|UNK of discussions|UNK|UNK|UNK autrichiennes|UNK|UNK|UNK in the Web.|UNK|UNK|UNK [111111111111111]  [total=-714.046] core=(-700.000,-14.000,14.000,-7.920,-11.659,-3.206,-7.755,-2.421,0.000,0.000,-1.283,0.000,0.000,0.000,-47.253)  
+Line 144: Translation took 0.000 seconds total
+Translating line 145  in thread id 140176936716032
+Translating: Je n'arrive pas à croire qu'il soit mort ! 
+Line 145: Collecting options took 0.000 seconds
+Line 145: Search took 0.000 seconds
+BEST TRANSLATION: I n'arrive|UNK|UNK|UNK not to believe qu'il|UNK|UNK|UNK may dealer ! [111111111]  [total=-216.925] core=(-200.000,-9.000,9.000,-4.706,-6.179,-2.100,-5.383,-1.924,0.000,0.000,-3.234,0.000,0.000,0.000,-45.009)  
+Line 145: Translation took 0.000 seconds total
+Translating line 146  in thread id 140176936716032
+Translating: Il me fout la chair de poule. 
+Line 146: Collecting options took 0.000 seconds
+Line 146: Search took 0.000 seconds
+BEST TRANSLATION: I fout|UNK|UNK|UNK the chair|UNK|UNK|UNK of poule.|UNK|UNK|UNK [1111111]  [total=-313.432] core=(-300.000,-6.000,6.000,-7.356,-13.141,-0.912,-5.722,-0.701,0.000,0.000,-0.592,0.000,0.000,0.000,-29.636)  
+Line 146: Translation took 0.000 seconds total
+Translating line 147  in thread id 140176936716032
+Translating: Quel est le plus long mot en français ? 
+Line 147: Collecting options took 0.000 seconds
+Line 147: Search took 0.000 seconds
+BEST TRANSLATION: What is the most long|UNK|UNK|UNK word in French ? [111111111]  [total=-119.376] core=(-100.000,-9.000,9.000,-7.115,-8.016,-3.834,-6.122,-2.284,0.000,0.000,-2.839,0.000,0.000,0.000,-47.242)  
+Line 147: Translation took 0.000 seconds total
+Translating line 148  in thread id 140176936716032
+Translating: Je suis désolé, c'est plus fort que moi. 
+Line 148: Collecting options took 0.000 seconds
+Line 148: Search took 0.000 seconds
+BEST TRANSLATION: I &apos;m désolé,|UNK|UNK|UNK c'est|UNK|UNK|UNK more fort|UNK|UNK|UNK that moi.|UNK|UNK|UNK [11111111]  [total=-407.056] core=(-400.000,-8.000,8.000,-2.153,-3.062,-1.737,-3.782,-0.483,0.000,0.000,-0.733,0.000,0.000,0.000,-28.289)  
+Line 148: Translation took 0.000 seconds total
+Translating line 149  in thread id 140176936716032
+Translating: Revenons à nos moutons. 
+Line 149: Collecting options took 0.000 seconds
+Line 149: Search took 0.000 seconds
+BEST TRANSLATION: Revenons|UNK|UNK|UNK to our moutons.|UNK|UNK|UNK [1111]  [total=-207.716] core=(-200.000,-4.000,4.000,-2.945,-3.473,-0.348,-1.590,-0.632,0.000,0.000,-0.650,0.000,0.000,0.000,-20.921)  
+Line 149: Translation took 0.000 seconds total
+Translating line 150  in thread id 140176936716032
+Translating: Il a pris un nouveau lecteur de CD hier. 
+Line 150: Collecting options took 0.000 seconds
+Line 150: Search took 0.000 seconds
+BEST TRANSLATION: It is acted a new reader of CD|UNK|UNK|UNK hier.|UNK|UNK|UNK [111111111]  [total=-218.074] core=(-200.000,-9.000,9.000,-8.695,-8.546,-3.234,-7.294,-2.008,0.000,0.000,-1.893,0.000,0.000,0.000,-44.300)  
+Line 150: Translation took 0.000 seconds total
+Translating line 151  in thread id 140176936716032
+Translating: Le Chili attend votre retour ! 
+Line 151: Collecting options took 0.000 seconds
+Line 151: Search took 0.000 seconds
+BEST TRANSLATION: The Chili|UNK|UNK|UNK attend|UNK|UNK|UNK your retour|UNK|UNK|UNK ! [111111]  [total=-305.148] core=(-300.000,-6.000,6.000,-2.448,-2.662,-0.180,-0.674,-0.397,0.000,0.000,-0.854,0.000,0.000,0.000,-21.560)  
+Line 151: Translation took 0.000 seconds total
+Translating line 152  in thread id 140176936716032
+Translating: Es-tu à Boston ? 
+Line 152: Collecting options took 0.000 seconds
+Line 152: Search took 0.000 seconds
+BEST TRANSLATION: Are you to Boston|UNK|UNK|UNK ? [1111]  [total=-105.084] core=(-100.000,-5.000,4.000,-3.085,-3.737,-1.964,-2.870,-0.711,0.000,0.000,-0.650,0.000,0.000,0.000,-16.289)  
+Line 152: Translation took 0.000 seconds total
+Translating line 153  in thread id 140176936716032
+Translating: Êtes-vous à Boston ? 
+Line 153: Collecting options took 0.000 seconds
+Line 153: Search took 0.000 seconds
+BEST TRANSLATION: Are to Boston|UNK|UNK|UNK ? [1111]  [total=-106.078] core=(-100.000,-4.000,4.000,-1.816,-2.589,-0.354,-0.896,-0.311,0.000,0.000,-0.251,0.000,0.000,0.000,-19.156)  
+Line 153: Translation took 0.000 seconds total
+Translating line 154  in thread id 140176936716032
+Translating: Tom a menacé Marie avec un couteau. 
+Line 154: Collecting options took 0.000 seconds
+Line 154: Search took 0.000 seconds
+BEST TRANSLATION: Tom with a couteau.|UNK|UNK|UNK has menacé|UNK|UNK|UNK Marie|UNK|UNK|UNK [1111111]  [total=-311.792] core=(-300.000,-7.000,6.000,-0.095,-1.615,-0.588,-3.046,-0.336,0.000,-3.646,-0.602,0.000,-0.847,-9.000,-29.186)  
+Line 154: Translation took 0.000 seconds total
+Translating line 155  in thread id 140176936716032
+Translating: Les bananes mûres sont jaunes. 
+Line 155: Collecting options took 0.000 seconds
+Line 155: Search took 0.000 seconds
+BEST TRANSLATION: The bananes|UNK|UNK|UNK mûres|UNK|UNK|UNK are jaunes.|UNK|UNK|UNK [11111]  [total=-304.811] core=(-300.000,-5.000,5.000,-2.722,-3.188,-0.307,-1.799,-0.278,0.000,0.000,-0.228,0.000,0.000,0.000,-18.112)  
+Line 155: Translation took 0.000 seconds total
+Translating line 156  in thread id 140176936716032
+Translating: Les bananes mûres sont jaunes. 
+Line 156: Collecting options took 0.000 seconds
+Line 156: Search took 0.000 seconds
+BEST TRANSLATION: The bananes|UNK|UNK|UNK mûres|UNK|UNK|UNK are jaunes.|UNK|UNK|UNK [11111]  [total=-304.811] core=(-300.000,-5.000,5.000,-2.722,-3.188,-0.307,-1.799,-0.278,0.000,0.000,-0.228,0.000,0.000,0.000,-18.112)  
+Line 156: Translation took 0.000 seconds total
+Translating line 157  in thread id 140176936716032
+Translating: Les bananes mûres sont jaunes. 
+Line 157: Collecting options took 0.000 seconds
+Line 157: Search took 0.000 seconds
+BEST TRANSLATION: The bananes|UNK|UNK|UNK mûres|UNK|UNK|UNK are jaunes.|UNK|UNK|UNK [11111]  [total=-304.811] core=(-300.000,-5.000,5.000,-2.722,-3.188,-0.307,-1.799,-0.278,0.000,0.000,-0.228,0.000,0.000,0.000,-18.112)  
+Line 157: Translation took 0.000 seconds total
+Translating line 158  in thread id 140176936716032
+Translating: C'est mon jardin secret. 
+Line 158: Collecting options took 0.000 seconds
+Line 158: Search took 0.000 seconds
+BEST TRANSLATION: C'est|UNK|UNK|UNK my jardin|UNK|UNK|UNK secret.|UNK|UNK|UNK [1111]  [total=-303.827] core=(-300.000,-4.000,4.000,-0.863,-0.894,0.000,-0.138,-0.282,0.000,0.000,-0.036,0.000,0.000,0.000,-16.306)  
+Line 158: Translation took 0.000 seconds total
+Translating line 159  in thread id 140176936716032
+Translating: C'est un petit bourge. 
+Line 159: Collecting options took 0.000 seconds
+Line 159: Search took 0.000 seconds
+BEST TRANSLATION: C'est|UNK|UNK|UNK a little bourge.|UNK|UNK|UNK [1111]  [total=-206.020] core=(-200.000,-4.000,4.000,-1.090,-1.270,-0.725,-1.083,-0.421,0.000,0.000,-0.309,0.000,0.000,0.000,-19.534)  
+Line 159: Translation took 0.000 seconds total
+Translating line 160  in thread id 140176936716032
+Translating: Je souffre le martyre. 
+Line 160: Collecting options took 0.000 seconds
+Line 160: Search took 0.000 seconds
+BEST TRANSLATION: I souffre|UNK|UNK|UNK the martyre.|UNK|UNK|UNK [1111]  [total=-203.889] core=(-200.000,-4.000,4.000,-2.319,-2.483,-0.077,-0.814,-0.106,0.000,0.000,-0.159,0.000,0.000,0.000,-14.942)  
+Line 160: Translation took 0.000 seconds total
+Translating line 161  in thread id 140176936716032
+Translating: Il est féru de sport. 
+Line 161: Collecting options took 0.000 seconds
+Line 161: Search took 0.000 seconds
+BEST TRANSLATION: It is féru|UNK|UNK|UNK of sport.|UNK|UNK|UNK [11111]  [total=-204.769] core=(-200.000,-5.000,4.000,-1.786,-2.704,-1.426,-3.541,-0.301,0.000,0.000,-0.284,0.000,0.000,0.000,-17.005)  
+Line 161: Translation took 0.000 seconds total
+Translating line 162  in thread id 140176936716032
+Translating: Ce garçon me fait perdre la tête avec tous ses petits jeux 
+Line 162: Collecting options took 0.000 seconds
+Line 162: Search took 0.000 seconds
+BEST TRANSLATION: It &apos;s garçon|UNK|UNK|UNK me lose my mind with all his petits|UNK|UNK|UNK jeux|UNK|UNK|UNK [111111111111]  [total=-323.460] core=(-300.000,-12.000,10.000,-8.591,-15.019,-1.930,-10.608,-2.598,0.000,-2.909,-0.927,0.000,-3.065,-6.000,-51.161)  
+Line 162: Translation took 0.000 seconds total
+Translating line 163  in thread id 140176936716032
+Translating: Les premiers explorateurs naviguaient guidés par les étoiles. 
+Line 163: Collecting options took 0.000 seconds
+Line 163: Search took 0.000 seconds
+BEST TRANSLATION: The premiers|UNK|UNK|UNK explorateurs|UNK|UNK|UNK naviguaient|UNK|UNK|UNK guidés|UNK|UNK|UNK by the étoiles.|UNK|UNK|UNK [11111111]  [total=-506.278] core=(-500.000,-8.000,8.000,-3.845,-4.481,-0.650,-3.336,-0.323,0.000,0.000,-0.268,0.000,0.000,0.000,-26.476)  
+Line 163: Translation took 0.000 seconds total
+Translating line 164  in thread id 140176936716032
+Translating: J’ai trouvé l’argent. 
+Line 164: Collecting options took 0.000 seconds
+Line 164: Search took 0.000 seconds
+BEST TRANSLATION: J’ai|UNK|UNK|UNK trouvé|UNK|UNK|UNK l’argent.|UNK|UNK|UNK [111]  [total=-301.604] core=(-300.000,-3.000,3.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,-10.408)  
+Line 164: Translation took 0.000 seconds total
+Translating line 165  in thread id 140176936716032
+Translating: L'homme est sous l'arbre. 
+Line 165: Collecting options took 0.000 seconds
+Line 165: Search took 0.000 seconds
+BEST TRANSLATION: L'homme|UNK|UNK|UNK is in the l'arbre.|UNK|UNK|UNK [1111]  [total=-206.620] core=(-200.000,-5.000,4.000,-3.144,-5.180,-0.433,-1.902,-0.674,0.000,0.000,-0.640,0.000,0.000,0.000,-19.789)  
+Line 165: Translation took 0.000 seconds total
+Translating line 166  in thread id 140176936716032
+Translating: J'ai bu du café. 
+Line 166: Collecting options took 0.000 seconds
+Line 166: Search took 0.000 seconds
+BEST TRANSLATION: J'ai|UNK|UNK|UNK bu|UNK|UNK|UNK the café.|UNK|UNK|UNK [1111]  [total=-305.568] core=(-300.000,-4.000,4.000,-5.407,-2.657,-0.693,-1.099,-1.609,0.000,0.000,-1.609,0.000,0.000,0.000,-14.862)  
+Line 166: Translation took 0.000 seconds total
+Translating line 167  in thread id 140176936716032
+Translating: Bien que son téléphone sonnât de toute évidence, Tom le laissa sur la table et n'y répondit point. 
+Line 167: Collecting options took 0.000 seconds
+Line 167: Search took 0.000 seconds
+BEST TRANSLATION: Bien|UNK|UNK|UNK his phone sonnât|UNK|UNK|UNK of toute|UNK|UNK|UNK évidence,|UNK|UNK|UNK Tom the laissa|UNK|UNK|UNK on the table|UNK|UNK|UNK and n'y|UNK|UNK|UNK Willie point.|UNK|UNK|UNK [111111111111111111]  [total=-828.257] core=(-800.000,-17.000,16.000,-6.684,-9.367,-0.823,-5.031,-3.604,0.000,0.000,-2.567,0.000,0.000,0.000,-84.449)  
+Line 167: Translation took 0.000 seconds total
+Translating line 168  in thread id 140176936716032
+Translating: Je n'ai pas de frères ou de sœurs. 
+Line 168: Collecting options took 0.000 seconds
+Line 168: Search took 0.000 seconds
+BEST TRANSLATION: I n'ai|UNK|UNK|UNK &apos;t frères|UNK|UNK|UNK or to sœurs.|UNK|UNK|UNK [11111111]  [total=-310.753] core=(-300.000,-7.000,7.000,-7.519,-4.849,-1.806,-2.334,-1.984,0.000,0.000,-2.299,0.000,0.000,0.000,-29.134)  
+Line 168: Translation took 0.000 seconds total
+Translating line 169  in thread id 140176936716032
+Translating: Je n'ai ni frère ni sœur. 
+Line 169: Collecting options took 0.000 seconds
+Line 169: Search took 0.000 seconds
+BEST TRANSLATION: I n'ai|UNK|UNK|UNK neither brother neither sœur.|UNK|UNK|UNK [111111]  [total=-213.530] core=(-200.000,-6.000,6.000,-0.919,-0.874,-1.393,-1.399,-1.371,0.000,0.000,-1.481,0.000,0.000,0.000,-37.915)  
+Line 169: Translation took 0.000 seconds total
+Translating line 170  in thread id 140176936716032
+Translating: Veuillez rester un peu plus longtemps. 
+Line 170: Collecting options took 0.000 seconds
+Line 170: Search took 0.000 seconds
+BEST TRANSLATION: Veuillez|UNK|UNK|UNK going to a bit more longtemps.|UNK|UNK|UNK [111111]  [total=-211.690] core=(-200.000,-7.000,5.000,-0.780,-4.269,-2.662,-5.140,-1.122,0.000,0.000,-1.233,0.000,0.000,0.000,-32.826)  
+Line 170: Translation took 0.000 seconds total
+Translating line 171  in thread id 140176936716032
+Translating: Êtes-vous au courant qu'il est finalement retourné chez lui ? 
+Line 171: Collecting options took 0.000 seconds
+Line 171: Search took 0.000 seconds
+BEST TRANSLATION: Are in courant|UNK|UNK|UNK qu'il|UNK|UNK|UNK is finalement|UNK|UNK|UNK retourné|UNK|UNK|UNK their him ? [1111111111]  [total=-415.871] core=(-400.000,-10.000,10.000,-6.954,-7.368,-2.026,-4.515,-1.259,0.000,0.000,-1.312,0.000,0.000,0.000,-45.854)  
+Line 171: Translation took 0.000 seconds total
+Translating line 172  in thread id 140176936716032
+Translating: Es-tu au courant qu'il est finalement retourné chez lui ? 
+Line 172: Collecting options took 0.000 seconds
+Line 172: Search took 0.000 seconds
+BEST TRANSLATION: Are you to courant|UNK|UNK|UNK qu'il|UNK|UNK|UNK is finalement|UNK|UNK|UNK retourné|UNK|UNK|UNK their him ? [1111111111]  [total=-414.975] core=(-400.000,-11.000,10.000,-9.679,-10.063,-4.041,-6.713,-1.744,0.000,0.000,-1.797,0.000,0.000,0.000,-41.627)  
+Line 172: Translation took 0.000 seconds total
+Translating line 173  in thread id 140176936716032
+Translating: Ta mère m'aime. 
+Line 173: Collecting options took 0.000 seconds
+Line 173: Search took 0.000 seconds
+BEST TRANSLATION: Ta|UNK|UNK|UNK mother m'aime.|UNK|UNK|UNK [111]  [total=-205.123] core=(-200.000,-3.000,3.000,-0.223,0.000,-0.223,0.000,-0.452,0.000,0.000,-0.452,0.000,0.000,0.000,-16.726)  
+Line 173: Translation took 0.000 seconds total
+Translating line 174  in thread id 140176936716032
+Translating: Votre mère m'aime. 
+Line 174: Collecting options took 0.000 seconds
+Line 174: Search took 0.000 seconds
+BEST TRANSLATION: Votre|UNK|UNK|UNK mother m'aime.|UNK|UNK|UNK [111]  [total=-205.123] core=(-200.000,-3.000,3.000,-0.223,0.000,-0.223,0.000,-0.452,0.000,0.000,-0.452,0.000,0.000,0.000,-16.726)  
+Line 174: Translation took 0.000 seconds total
+Translating line 175  in thread id 140176936716032
+Translating: La fleur est de couleur rouge. 
+Line 175: Collecting options took 0.000 seconds
+Line 175: Search took 0.000 seconds
+BEST TRANSLATION: The fleur|UNK|UNK|UNK is to couleur|UNK|UNK|UNK rouge.|UNK|UNK|UNK [111111]  [total=-305.888] core=(-300.000,-6.000,5.000,-1.642,-3.808,-0.288,-3.483,-0.413,0.000,0.000,-0.413,0.000,0.000,0.000,-21.592)  
+Line 175: Translation took 0.000 seconds total
+Translating line 176  in thread id 140176936716032
+Translating: Il a préparé un dîner pour elle. 
+Line 176: Collecting options took 0.000 seconds
+Line 176: Search took 0.000 seconds
+BEST TRANSLATION: It is préparé|UNK|UNK|UNK a dinner for elle.|UNK|UNK|UNK [1111111]  [total=-212.135] core=(-200.000,-7.000,7.000,-6.106,-6.003,-3.124,-4.824,-1.312,0.000,0.000,-1.094,0.000,0.000,0.000,-31.604)  
+Line 176: Translation took 0.000 seconds total
+Translating line 177  in thread id 140176936716032
+Translating: N'oublie pas que je t'aime et que tu me manques. 
+Line 177: Collecting options took 0.000 seconds
+Line 177: Search took 0.000 seconds
+BEST TRANSLATION: N'oublie|UNK|UNK|UNK &apos;t that I t'aime|UNK|UNK|UNK and you me manques.|UNK|UNK|UNK [1111111111]  [total=-315.471] core=(-300.000,-9.000,8.000,-3.578,-7.625,-1.205,-3.986,-3.199,0.000,0.000,-3.833,0.000,0.000,0.000,-41.366)  
+Line 177: Translation took 0.000 seconds total
+Translating line 178  in thread id 140176936716032
+Translating: Elle a pris une fleur du vase et me l'a donnée. 
+Line 178: Collecting options took 0.000 seconds
+Line 178: Search took 0.000 seconds
+BEST TRANSLATION: She has acted a fleur|UNK|UNK|UNK the vessel for and me l'a|UNK|UNK|UNK donnée.|UNK|UNK|UNK [11111111111]  [total=-325.435] core=(-300.000,-12.000,11.000,-9.025,-7.093,-1.728,-7.841,-5.042,0.000,0.000,-4.864,0.000,0.000,0.000,-63.053)  
+Line 178: Translation took 0.000 seconds total
+Translating line 179  in thread id 140176936716032
+Translating: Est-il possible d'acheter des pommes de terre ici? 
+Line 179: Collecting options took 0.000 seconds
+Line 179: Search took 0.000 seconds
+BEST TRANSLATION: Est-il|UNK|UNK|UNK be d'acheter|UNK|UNK|UNK potatoes ici?|UNK|UNK|UNK [11111111]  [total=-310.441] core=(-300.000,-5.000,5.000,-3.932,-9.927,0.000,-1.665,-1.022,0.000,0.000,-1.022,0.000,0.000,0.000,-25.447)  
+Line 179: Translation took 0.000 seconds total
+Translating line 180  in thread id 140176936716032
+Translating: J'ai une amie qui vit à Tokyo. 
+Line 180: Collecting options took 0.000 seconds
+Line 180: Search took 0.000 seconds
+BEST TRANSLATION: J'ai|UNK|UNK|UNK a amie|UNK|UNK|UNK who vit|UNK|UNK|UNK to Tokyo.|UNK|UNK|UNK [1111111]  [total=-407.747] core=(-400.000,-7.000,7.000,-2.162,-2.866,-0.904,-2.331,-0.358,0.000,0.000,-0.274,0.000,0.000,0.000,-28.610)  
+Line 180: Translation took 0.000 seconds total
+Translating line 181  in thread id 140176936716032
+Translating: L'homme est grand. 
+Line 181: Collecting options took 0.000 seconds
+Line 181: Search took 0.000 seconds
+BEST TRANSLATION: L'homme|UNK|UNK|UNK is grand.|UNK|UNK|UNK [111]  [total=-203.541] core=(-200.000,-3.000,3.000,-0.149,-0.288,-0.433,-0.515,-0.164,0.000,0.000,-0.129,0.000,0.000,0.000,-13.553)  
+Line 181: Translation took 0.000 seconds total
+Translating line 182  in thread id 140176936716032
+Translating: Tu es très belle. 
+Line 182: Collecting options took 0.000 seconds
+Line 182: Search took 0.000 seconds
+BEST TRANSLATION: You &apos;re very belle.|UNK|UNK|UNK [1111]  [total=-104.766] core=(-100.000,-4.000,4.000,-1.143,-1.840,-0.856,-0.974,-0.492,0.000,0.000,-0.384,0.000,0.000,0.000,-16.682)  
+Line 182: Translation took 0.000 seconds total
+Translating line 183  in thread id 140176936716032
+Translating: Qui as-tu vu hier à la fête? 
+Line 183: Collecting options took 0.000 seconds
+Line 183: Search took 0.000 seconds
+BEST TRANSLATION: Who did you vu|UNK|UNK|UNK yesterday to the fête?|UNK|UNK|UNK [1111111]  [total=-213.469] core=(-200.000,-8.000,6.000,-2.747,-6.363,-0.693,-3.187,-1.466,0.000,0.000,-1.266,0.000,0.000,0.000,-38.502)  
+Line 183: Translation took 0.000 seconds total
+Translating line 184  in thread id 140176936716032
+Translating: La nouvelle constitution ne résoudra pas les problèmes de l'Égypte. 
+Line 184: Collecting options took 0.000 seconds
+Line 184: Search took 0.000 seconds
+BEST TRANSLATION: The new constitution|UNK|UNK|UNK don &apos;t have the poor l'Égypte.|UNK|UNK|UNK résoudra|UNK|UNK|UNK [1111111111]  [total=-315.676] core=(-300.000,-10.000,8.000,-4.094,-7.028,-1.354,-9.194,-1.077,0.000,-0.511,-1.435,0.000,-0.048,-7.000,-39.840)  
+Line 184: Translation took 0.000 seconds total
+Translating line 185  in thread id 140176936716032
+Translating: Attention à la marche ! 
+Line 185: Collecting options took 0.000 seconds
+Line 185: Search took 0.000 seconds
+BEST TRANSLATION: Attention|UNK|UNK|UNK to the marche|UNK|UNK|UNK ! [11111]  [total=-204.647] core=(-200.000,-5.000,4.000,-0.652,-2.813,-0.180,-1.721,-0.532,0.000,0.000,-0.167,0.000,0.000,0.000,-18.329)  
+Line 185: Translation took 0.000 seconds total
+Translating line 186  in thread id 140176936716032
+Translating: Ton petit ami travaille ici. 
+Line 186: Collecting options took 0.000 seconds
+Line 186: Search took 0.000 seconds
+BEST TRANSLATION: Your boyfriend travaille|UNK|UNK|UNK ici.|UNK|UNK|UNK [11111]  [total=-208.270] core=(-200.000,-4.000,4.000,-0.693,-2.079,0.000,-0.539,-1.022,0.000,0.000,-1.022,0.000,0.000,0.000,-23.589)  
+Line 186: Translation took 0.000 seconds total
+Translating line 187  in thread id 140176936716032
+Translating: La situation est critique. 
+Line 187: Collecting options took 0.000 seconds
+Line 187: Search took 0.000 seconds
+BEST TRANSLATION: The situation|UNK|UNK|UNK is critique.|UNK|UNK|UNK [1111]  [total=-204.240] core=(-200.000,-4.000,4.000,-1.791,-1.930,-0.721,-1.614,-0.241,0.000,0.000,-0.206,0.000,0.000,0.000,-15.390)  
+Line 187: Translation took 0.000 seconds total
+Translating line 188  in thread id 140176936716032
+Translating: Le remède est dans le poison. 
+Line 188: Collecting options took 0.000 seconds
+Line 188: Search took 0.000 seconds
+BEST TRANSLATION: The remède|UNK|UNK|UNK is in the poison.|UNK|UNK|UNK [111111]  [total=-205.642] core=(-200.000,-6.000,6.000,-2.985,-3.722,-0.668,-1.836,-0.359,0.000,0.000,-0.265,0.000,0.000,0.000,-21.626)  
+Line 188: Translation took 0.000 seconds total
+Translating line 189  in thread id 140176936716032
+Translating: Nous appelons un sandwich « Butterbrot ». 
+Line 189: Collecting options took 0.000 seconds
+Line 189: Search took 0.000 seconds
+BEST TRANSLATION: We appelons|UNK|UNK|UNK a sandwich|UNK|UNK|UNK &quot; Butterbrot|UNK|UNK|UNK ».|UNK|UNK|UNK [1111111]  [total=-406.167] core=(-400.000,-7.000,7.000,-2.782,-3.061,-0.252,-0.390,-0.307,0.000,0.000,-0.233,0.000,0.000,0.000,-26.216)  
+Line 189: Translation took 0.000 seconds total
+Translating line 190  in thread id 140176936716032
+Translating: L'amour est à ceux qui y pensent. 
+Line 190: Collecting options took 0.000 seconds
+Line 190: Search took 0.000 seconds
+BEST TRANSLATION: L'amour|UNK|UNK|UNK is to those who do pensent.|UNK|UNK|UNK [1111111]  [total=-213.158] core=(-200.000,-7.000,6.000,-3.921,-6.283,-2.391,-5.929,-0.957,0.000,0.000,-0.941,0.000,0.000,0.000,-34.168)  
+Line 190: Translation took 0.000 seconds total
+Translating line 191  in thread id 140176936716032
+Translating: Le mariage doit être une éducation mutuelle et infinie. 
+Line 191: Collecting options took 0.000 seconds
+Line 191: Search took 0.000 seconds
+BEST TRANSLATION: The wedding have to be a éducation|UNK|UNK|UNK mutuelle|UNK|UNK|UNK and infinie.|UNK|UNK|UNK [111111111]  [total=-313.352] core=(-300.000,-10.000,9.000,-6.469,-7.654,-1.780,-2.315,-1.940,0.000,0.000,-1.460,0.000,0.000,0.000,-40.978)  
+Line 191: Translation took 0.000 seconds total
+Translating line 192  in thread id 140176936716032
+Translating: Ce que l'homme redoute le plus, c'est ce qui lui convient. 
+Line 192: Collecting options took 0.000 seconds
+Line 192: Search took 0.000 seconds
+BEST TRANSLATION: What that l'homme|UNK|UNK|UNK redoute|UNK|UNK|UNK the plus,|UNK|UNK|UNK c'est|UNK|UNK|UNK what happens to tell him convient.|UNK|UNK|UNK [11111111111]  [total=-514.640] core=(-500.000,-13.000,10.000,-5.007,-8.230,-4.119,-12.496,-2.286,0.000,0.000,-2.258,0.000,0.000,0.000,-44.612)  
+Line 192: Translation took 0.000 seconds total
+Translating line 193  in thread id 140176936716032
+Translating: Les livres font les époques et les nations, comme les époques et les nations font les livres. 
+Line 193: Collecting options took 0.000 seconds
+Line 193: Search took 1.000 seconds
+BEST TRANSLATION: The home and do the époques|UNK|UNK|UNK and the nations,|UNK|UNK|UNK like the époques|UNK|UNK|UNK and the nations|UNK|UNK|UNK do the livres.|UNK|UNK|UNK [11111111111111111]  [total=-531.110] core=(-500.000,-18.000,15.000,-16.822,-23.323,-3.970,-14.948,-4.175,0.000,0.000,-4.136,0.000,0.000,0.000,-75.608)  
+Line 193: Translation took 1.000 seconds total
+Translating line 194  in thread id 140176936716032
+Translating: Rien n'est vrai que ce qu'on ne dit pas. 
+Line 194: Collecting options took 0.000 seconds
+Line 194: Search took 0.000 seconds
+BEST TRANSLATION: Rien|UNK|UNK|UNK n'est|UNK|UNK|UNK true that what qu'on|UNK|UNK|UNK gives pas.|UNK|UNK|UNK [111111111]  [total=-414.702] core=(-400.000,-8.000,8.000,-2.517,-3.503,-2.126,-7.073,-1.195,0.000,0.000,-1.123,0.000,0.000,0.000,-41.127)  
+Line 194: Translation took 0.000 seconds total
+Translating line 195  in thread id 140176936716032
+Translating: Les parfums, les couleurs et les sons se répondent. 
+Line 195: Collecting options took 0.000 seconds
+Line 195: Search took 0.000 seconds
+BEST TRANSLATION: The parfums,|UNK|UNK|UNK the couleurs|UNK|UNK|UNK and the sons|UNK|UNK|UNK are répondent.|UNK|UNK|UNK [111111111]  [total=-412.605] core=(-400.000,-9.000,8.000,-7.583,-10.319,-1.615,-7.167,-1.219,0.000,0.000,-1.165,0.000,0.000,0.000,-34.306)  
+Line 195: Translation took 0.000 seconds total
+Translating line 196  in thread id 140176936716032
+Translating: Elle est sous la chaise. 
+Line 196: Collecting options took 0.000 seconds
+Line 196: Search took 0.000 seconds
+BEST TRANSLATION: She &apos;s in the the chaise.|UNK|UNK|UNK [11111]  [total=-108.220] core=(-100.000,-6.000,5.000,-4.390,-6.937,-1.426,-3.405,-0.968,0.000,0.000,-0.816,0.000,0.000,0.000,-22.907)  
+Line 196: Translation took 0.000 seconds total
+Translating line 197  in thread id 140176936716032
+Translating: Elle est sous la chaise. 
+Line 197: Collecting options took 0.000 seconds
+Line 197: Search took 0.000 seconds
+BEST TRANSLATION: She &apos;s in the the chaise.|UNK|UNK|UNK [11111]  [total=-108.220] core=(-100.000,-6.000,5.000,-4.390,-6.937,-1.426,-3.405,-0.968,0.000,0.000,-0.816,0.000,0.000,0.000,-22.907)  
+Line 197: Translation took 0.000 seconds total
+Translating line 198  in thread id 140176936716032
+Translating: Pouvez-vous l'épeler ? 
+Line 198: Collecting options took 0.000 seconds
+Line 198: Search took 0.000 seconds
+BEST TRANSLATION: Pouvez-vous|UNK|UNK|UNK l'épeler|UNK|UNK|UNK ? [111]  [total=-201.601] core=(-200.000,-3.000,3.000,-0.006,-0.006,-0.006,0.000,-0.079,0.000,0.000,0.000,0.000,0.000,0.000,-10.347)  
+Line 198: Translation took 0.000 seconds total
+Translating line 199  in thread id 140176936716032
+Translating: Peux-tu l'épeler ? 
+Line 199: Collecting options took 0.000 seconds
+Line 199: Search took 0.000 seconds
+BEST TRANSLATION: Peux-tu|UNK|UNK|UNK l'épeler|UNK|UNK|UNK ? [111]  [total=-201.601] core=(-200.000,-3.000,3.000,-0.006,-0.006,-0.006,0.000,-0.079,0.000,0.000,0.000,0.000,0.000,0.000,-10.347)  
+Line 199: Translation took 0.000 seconds total
+Name:moses	VmPeak:206628 kB	VmRSS:34440 kB	RSSMax:40240 kB	user:5.111	sys:0.086	CPU:5.197	real:5.188
